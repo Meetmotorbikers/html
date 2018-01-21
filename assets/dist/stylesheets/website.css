@@ -6404,9 +6404,7 @@ html, body {
   line-height: 24px;
   color: #787B82;
   letter-spacing: -0.1px;
-  background: #fff; }
-
-html {
+  background: #fff;
   height: 100%; }
 
 .navbar {
@@ -6599,79 +6597,118 @@ html {
   background-size: cover;
   background-color: #999;
   height: 100%; }
-
-.start .teaser-headline {
-  font-size: 67px;
-  line-height: 77px;
-  color: #fff;
-  margin-bottom: 50px; }
-  .start .teaser-headline span.primary-color {
-    color: #E01F1F; }
-  @media (max-width: 991px) {
-    .start .teaser-headline {
-      font-size: 47px;
-      line-height: 57px; } }
-.start form .form-fit-helper {
-  float: left;
-  position: relative;
-  margin-bottom: 0; }
-  .start form .form-fit-helper label {
-    position: absolute;
-    height: 90px;
-    vertical-align: middle;
-    display: inline-block;
-    left: 0;
-    right: 0;
+  .start #content {
+    padding-top: 98px; }
+  .start .teaser-headline {
+    font-size: 67px;
     line-height: 77px;
-    padding-left: 30px;
-    padding-right: 30px; }
-    .start form .form-fit-helper label:before {
-      font-family: 'meetmotor-icons';
-      margin: 0 10px 0 0;
-      float: left;
-      display: block;
-      color: #D9DBDE; }
-    .start form .form-fit-helper label[for="where"]:before {
-      content: '\e908';
-      margin-left: 5px; }
-    .start form .form-fit-helper label[for="time"]:before {
-      content: '\e901'; }
-    .start form .form-fit-helper label[for="count"]:before {
-      content: '\e906'; }
-  .start form .form-fit-helper input {
-    height: 90px;
-    border: 0;
-    border-radius: 0;
-    background: #fff;
-    padding: 0 55px; }
-  .start form .form-fit-helper:nth-child(1) {
-    width: 40%;
-    border-right: 1px solid #D9DBDE; }
-  .start form .form-fit-helper:nth-child(2) {
-    width: 20%;
-    border-right: 1px solid #D9DBDE; }
-  .start form .form-fit-helper:nth-child(3) {
-    width: 30%; }
-  .start form .form-fit-helper:nth-child(4) {
-    width: 10%; }
-  @media (max-width: 767px) {
+    color: #fff;
+    margin-bottom: 50px; }
+    .start .teaser-headline span.primary-color {
+      color: #E01F1F; }
+    @media (max-width: 991px) {
+      .start .teaser-headline {
+        font-size: 47px;
+        line-height: 57px; } }
+  .start form .form-fit-helper {
+    float: left;
+    position: relative;
+    margin-bottom: 0; }
+    .start form .form-fit-helper label {
+      position: absolute;
+      height: 90px;
+      vertical-align: middle;
+      display: inline-block;
+      left: 0;
+      right: 0;
+      line-height: 77px;
+      padding-left: 30px;
+      padding-right: 30px; }
+      .start form .form-fit-helper label:before {
+        font-family: 'meetmotor-icons';
+        margin: 0 10px 0 0;
+        float: left;
+        display: block;
+        color: #D9DBDE; }
+      .start form .form-fit-helper label[for="where"]:before {
+        content: '\e908';
+        margin-left: 5px; }
+      .start form .form-fit-helper label[for="time"]:before {
+        content: '\e901'; }
+      .start form .form-fit-helper label[for="count"]:before {
+        content: '\e906'; }
+    .start form .form-fit-helper input {
+      height: 90px;
+      border: 0;
+      border-radius: 0;
+      background: #fff;
+      padding: 0 55px; }
     .start form .form-fit-helper:nth-child(1) {
-      width: 100%;
-      border-right: 0;
-      border-bottom: 1px solid #D9DBDE; }
+      width: 40%;
+      border-right: 1px solid #D9DBDE; }
     .start form .form-fit-helper:nth-child(2) {
-      width: 100%;
-      border-right: 0;
-      border-bottom: 1px solid #D9DBDE; }
+      width: 20%;
+      border-right: 1px solid #D9DBDE; }
     .start form .form-fit-helper:nth-child(3) {
-      width: 100%;
-      border-bottom: 1px solid #D9DBDE; }
+      width: 30%; }
     .start form .form-fit-helper:nth-child(4) {
-      width: 100%; } }
-.start #content {
-  padding-top: 98px; }
+      width: 10%; }
+    @media (max-width: 767px) {
+      .start form .form-fit-helper:nth-child(1) {
+        width: 100%;
+        border-right: 0;
+        border-bottom: 1px solid #D9DBDE; }
+      .start form .form-fit-helper:nth-child(2) {
+        width: 100%;
+        border-right: 0;
+        border-bottom: 1px solid #D9DBDE; }
+      .start form .form-fit-helper:nth-child(3) {
+        width: 100%;
+        border-bottom: 1px solid #D9DBDE; }
+      .start form .form-fit-helper:nth-child(4) {
+        width: 100%; } }
 
 .page #content {
-  padding-top: 72px; }
+  padding-top: 72px;
+  height: 100%; }
+
+.sort-function {
+  border-bottom: 1px solid #F0F2F3; }
+  .sort-function [class*="col-"]:first-child {
+    border-right: 1px solid #F0F2F3; }
+  .sort-function .form-group {
+    padding: 15px 30px;
+    margin: 0; }
+    .sort-function .form-group label {
+      font-weight: 700;
+      color: #D9DBDE;
+      margin: 0px; }
+    .sort-function .form-group .select-wrapper select {
+      float: left;
+      width: auto;
+      border: 0px;
+      font-family: "Oswald", sans-serif;
+      padding: 0px;
+      font-size: 18px;
+      height: 24px !important;
+      transition: all 0.177s ease;
+      margin: 0;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-appearance: none;
+      -moz-appearance: none; }
+      .sort-function .form-group .select-wrapper select:focus, .sort-function .form-group .select-wrapper select:hover {
+        color: #E01F1F; }
+    .sort-function .form-group .select-wrapper:after {
+      content: '';
+      width: 10px;
+      height: 8px;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid #172029;
+      float: left;
+      display: block;
+      margin: 10px 0 0 10px; }
 
 /*# sourceMappingURL=website.css.map */

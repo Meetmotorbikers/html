@@ -47,29 +47,34 @@
             </div>
         </nav>
         <div id="content">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-5 col-xs-12">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <label>Suchradius</label>
-                                <select>
-                                    <option>50KM</option>
-                                    <option>75KM</option>
-                                    <option>100KM</option>
-                                    <option>150KM</option>
-                                </select>
+            <div class="container-fluid h-100">
+                <div class="row h-100">
+                    <div class="col-lg-3 col-md-4 col-sm-5 col-xs-12 h-100">
+                        <div class="sort-function row">
+                            <div class="col-lg-5">
+                                <div class="form-group clearfix">
+                                    <label for="search-radius">Suchradius</label>
+                                    <div class="select-wrapper">
+                                        <select class="form-control" id="search-radius">
+                                            <option>50KM</option>
+                                            <option>75KM</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-lg-8">
-                                <label>Sortieren nach</label>
-                                <select>
-                                    <option>Datum</option>
-                                </select>
+                            <div class="col-lg-7">
+                                 <div class="form-group clearfix">
+                                    <label for="sort-date">Sortieren nach</label>
+                                    <div class="select-wrapper">
+                                        <select class="form-control" id="sort-date">
+                                            <option>DATUM</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-9 col-md-8 col-sm-7 col-xs-12">
-                        test
+                    <div class="col-lg-9 col-md-8 col-sm-7 col-xs-12 h-100" style="background:url('../html/assets/dist/images/googlemaps.jpg');">
                     </div>
                 </div>
             </div>
