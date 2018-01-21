@@ -2,8 +2,11 @@
 /assets/fonts/*
 /assets/images/*
 /assets/javascripts/*
+/assets/dist/javascripts/javascripts/*
 /assets/node_modules/*
 /assets/stylesheets/*
 /assets/vendors/*
 /assets/package-lock.json
+/assets/Gruntfile.js
+/assets/package.json
 *.DS_Store
