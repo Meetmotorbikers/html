@@ -3,7 +3,7 @@
 /assets/images/*
 /assets/javascripts/*
 /assets/node_modules/*
-/assets/styleshhets/*
+/assets/stylesheets/*
 /assets/vendors/*
 /assets/package-lock.json
 *.DS_Store
