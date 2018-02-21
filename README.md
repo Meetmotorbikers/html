@@ -7,11 +7,9 @@
 cd root/assets
 npm install 
 
-change css? 
--> cd root/assets/ "grunt watch" -> cd stylesheets/* change files..
+change css or js? 
+-> cd root/assets/ "grunt watch" change files..
 
-change js? 
--> cd root/assets/ "grunt watch" -> cd javascripts/* change files..
 ```
 
 **package.json**
