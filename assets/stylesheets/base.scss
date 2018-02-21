@@ -53,10 +53,10 @@ header {
 		form { margin-left: 20px;  width: 650px;
 			@include media-breakpoint-down(lg) { width: 560px; }
 			@include media-breakpoint-down(md) { width: 100%; margin-left: 0; }
-			.form-wrapper { @include box-shadow-fix(0px 1px 2px rgba(0,0,0,0.1)); border: 1px solid $gray; overflow:hidden;
+			.form-wrapper { @include box-shadow-fix(0px 1px 2px rgba(0,0,0,0.1)); border: 1px solid $gray; @include clearfix;
 				.form-fit-helper { float: left; position: relative; margin-bottom: 0;
-					label { position: absolute; height: 50px; vertical-align: middle; display: inline-block; left: 0; right: 0; line-height: 50px; padding: 0 15px;
-						&:before { font-family: 'meetmotor-icons'; float: left; display: block; color: $gray; }
+					label { position: absolute; top:0; height: 50px; vertical-align: middle; display: inline-block; left: 0; right: 0; line-height: 50px; padding: 0 15px;
+						&:before { font-family: 'meetmotor-icons'; float: left; display: block; color: $gray; transition: all 0.2s;}
 						&[for="where"]:before { content: $mm-iconmap; margin-left: 5px; }
 		                &[for="time"]:before { content: $mm-iconclock; }
 		                &[for="art"]:before { content: $mm-iconbike; margin-left: 0px; }
@@ -66,8 +66,13 @@ header {
 		                    select { position: absolute; left: 0; top: 0; height: 50px !important; margin: 0; appearance:none; }
 		                }
 					}
-					input, select { height: 50px; border: 0; border-radius: 0; background: #fff; padding: 0 35px; 
+					input, select { height: 50px; border: 0; border-radius: 0; background: #fff; padding: 0 40px; 
 						@include inputPlaceholder() { color: $secondary; }
+					}
+					input:focus~label, label.select-label:focus {
+						&[for="where"]:before, 
+		                &[for="time"]:before,
+		                &[for="art"]:before { color: $primary; }
 					}
 					select#art { padding: 0 55px; }
 					&:nth-child(1) { width: 40%; border-right: 1px solid $gray; }

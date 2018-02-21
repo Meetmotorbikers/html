@@ -1,8 +1,11 @@
 .sort-function { border-bottom: 1px solid $border;
+    @include media-breakpoint-down(sm) { display:none; }
 	[class*="col-"]:first-child {
 		border-right: 1px solid $border; 
 	}
 	.form-group { padding: 15px 30px; margin:0;
+		@include media-breakpoint-down(md) { padding: 15px 20px; }
+    	@include media-breakpoint-down(sm) { padding: 15px 10px; }
 		label { font-weight: 700; color: $gray; margin: 0px; }
 		.select-wrapper {
 			select { float:left; width: auto; border: 0px; font-family: $oswald;  padding: 0px; font-size: 18px; height: 24px !important; @include transition(all 0.177s ease); margin: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-appearance: none; -moz-appearance: none;

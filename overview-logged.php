@@ -3,7 +3,7 @@
     <?php $title = "Overview"; include "includes/head.php"; ?>
     <body class="page">
         <div class="d-flex h-100 mx-auto flex-column">
-            <?php include "includes/header.php"; ?>
+            <?php include "includes/header-logged.php"; ?>
             <main>
                 <div class="container-fluid">
                     <div class="row">

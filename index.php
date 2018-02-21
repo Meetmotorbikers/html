@@ -3,7 +3,7 @@
     <?php $title = "Startseite"; include "includes/head.php"; ?>
     <body class="start">
         <div class="d-flex h-100 mx-auto flex-column">
-            <?php include "includes/header.php"; ?>
+            <?php include "includes/home-header.php"; ?>
             <main>
                 <div class="container">
                     <div class="row">

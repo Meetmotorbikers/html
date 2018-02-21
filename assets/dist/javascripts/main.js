@@ -8,11 +8,32 @@
 
 		if($theWindowSize > 767) {
 			$(window).resize(function() {
-			    $('body.page main').height($(window).height() - headandfooter);
+			    $('.gmaps').height($(window).height() - headandfooter);
 			});  
 		};
 
 		$(window).trigger('resize');
 	}
+
+	function searchDropdown() {
+		var dropdown = $('[data-search-dropdown]');
+		var input = $('#where');
+
+		dropdown.hide();
+		input.on('click', function() {
+			dropdown.toggle();
+		});
+
+	}
+
+	function datepicker() {
+    	$( "#time" ).datepicker({
+    		prevText: '<i class="fa fa-angle-left"></i>',
+    		nextText: '<i class="fa fa-angle-right"></i>'
+    	});
+	}
+
 	bodyHeight();
+	searchDropdown();
+	datepicker();
 })(jQuery);
