@@ -1,0 +1,77 @@
+@mixin box-shadow-fix($value) {
+    -webkit-box-shadow: $value;
+    -moz-box-shadow: $value;
+    box-shadow: $value;
+}
+
+@mixin inputPlaceholder() {
+    $selector: '';
+    $prefixes: (
+        moz: "::-moz",
+        webkit: "::-webkit",
+        ie: ":-ms"
+    );
+    @each $prop, $value in $prefixes {
+        @if $prop != "moz" {
+            $selector: #{$value}-input-placeholder;
+        } @else {
+            $selector: #{$value}-placeholder;
+        }
+        @if & {
+            &#{$selector} {
+                @content;
+            }
+        } @else {
+            #{$selector} {
+                @content;
+            }
+        }
+    }
+    &::placeholder {
+      @content;
+    }
+}
+
+@function solid-lighten($color, $percentage) {
+    @return lighten($color, (1-$percentage)*5%);
+}
+@function solid-darken($color, $percentage) {
+    @return darken($color, (1-$percentage)*5%);
+}
+@mixin rgba($type, $color, $percentage, $shade: ligthen) {
+    @if $shade == lighten {
+        @if $type == color {
+            color: solid-lighten($color, $percentage);
+            color: rgba($color, $percentage);
+        }
+        @if $type == bg {
+            background-color: solid-lighten($color, $percentage);
+            background-color: rgba($color, $percentage);
+        }
+    }
+    @else {
+        @if $type == color {
+            color: solid-darken($color, $percentage);
+            color: rgba($color, $percentage);
+        }
+        @if $type == bg {
+            background-color: solid-darken($color, $percentage);
+            background-color: rgba($color, $percentage);
+        }
+    }
+}
+
+@mixin border-opacity($color, $opacity) {
+    $opacity: $opacity / 100;
+
+    // Unsupporting browsers get this
+    border-color: $color;
+
+    // Browsers that support RGBA will get this instead
+    border-color: rgba($color, $opacity);
+
+    // Prevent the element's background from reaching the edge of the border
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding;
+    background-clip: padding-box;
+}

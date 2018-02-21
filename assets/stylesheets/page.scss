@@ -1,0 +1,41 @@
+.start { @include transition(background-image .2s ease-in); background-color: $secondary; background-image: url(../images/background.jpg); background-position: center center; background-repeat:  no-repeat; background-attachment: fixed; background-size:  cover; background-color: #999; height:100%;
+    #content { padding-top: 98px; }
+    .teaser-headline { font-size: 67px; line-height: 77px; color:#fff; margin-bottom: 50px; span.primary-color { color:$primary; } 
+        @include media-breakpoint-down(md) { font-size: 47px; line-height: 57px; }
+        @include media-breakpoint-down(sm) { font-size: 36px; line-height: 37px; }
+    }
+    form {
+        .form-fit-helper { float: left; position: relative; margin-bottom: 0;
+            label { position: absolute; height: 90px; vertical-align: middle; display: inline-block; left: 0; right: 0; line-height: 77px; padding-left: 30px; padding-right: 30px;
+				&:before { font-family: 'meetmotor-icons'; margin:0 10px 0 0; float: left; display: block; color: $gray; }
+    			&[for="where"]:before { content: $mm-iconmap; margin-left: 5px; }
+                &[for="time"]:before { content: $mm-iconclock; }
+                &[for="art"]:before { content: $mm-iconbike; margin-left: -15px; }
+                &.select-label {
+                    position:relative; width: 100%;
+                    &:before { position: absolute; z-index: 10; }
+                    select { position: absolute; left: 0; top: 0; height: 90px !important; margin: 0; appearance:none; }
+                }
+			}
+            input, select { height: 90px; border: 0; border-radius: 0; background: #fff; padding: 0 55px; }
+            &:nth-child(1) { width: 40%; border-right: 1px solid $gray; }
+            &:nth-child(2) { width: 20%; border-right: 1px solid $gray; }
+            &:nth-child(3) { width: 30%; }
+            &:nth-child(4) { width: 10%; }
+            @include media-breakpoint-down(sm) {
+                &:nth-child(1) { width: 100%; border-right: 0; border-bottom: 1px solid $gray; }
+                &:nth-child(2) { width: 100%; border-right: 0; border-bottom: 1px solid $gray; }
+                &:nth-child(3) { width: 100%; border-bottom: 1px solid $gray; }
+                &:nth-child(4) { width: 100%; }
+            }
+        }
+    }
+    main { margin: 40px 0; 
+        @include media-breakpoint-down(sm) { margin: 30px 0; }
+    }
+    footer { @include border-opacity($gray, 20%); }
+}
+
+.page {
+    // #content { padding-top: 72px; height: 100%; }
+}
