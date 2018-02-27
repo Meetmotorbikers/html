@@ -3,15 +3,20 @@
 	[class*="col-"]:first-child {
 		border-right: 1px solid $border; 
 	}
-	.form-group { padding: 15px 30px; margin:0;
-		@include media-breakpoint-down(md) { padding: 15px 20px; }
-    	@include media-breakpoint-down(sm) { padding: 15px 10px; }
-		label { font-weight: 700; color: $gray; margin: 0px; }
-		.select-wrapper {
-			select { float:left; width: auto; border: 0px; font-family: $oswald;  padding: 0px; font-size: 18px; height: 24px !important; @include transition(all 0.177s ease); margin: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-appearance: none; -moz-appearance: none;
-				&:focus, &:hover { color: $primary; }
+	.form-group { padding: 0; margin:0;
+		//@include media-breakpoint-down(md) { padding: 15px 20px; }
+    	//@include media-breakpoint-down(sm) { padding: 15px 10px; }
+		label { font-weight: 700; color: $gray; margin: 2px 0; width: 100%;
+			span { position: absolute; top: 15px; left: 45px; }
+			.select-wrapper {
+				select { height: 85px; border: 0px; font-family: $oswald; padding: 20px 0 0 30px; font-size: 18px; @include transition(all 0.177s ease); margin: 0; box-sizing: border-box; appearance:none; 
+					&:focus, &:hover { color: $primary; }
+				}
+				&:after { position: absolute; top: 43px; left: 85px; content:''; width: 10px; height: 8px; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid $secondary; float:left; display: block; margin: 10px 0 0 10px; }
 			}
-			&:after { content:''; width: 10px; height: 8px; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid $secondary; float:left; display: block; margin: 10px 0 0 10px; }
+			&[for="sort-date"] {
+				.select-wrapper:after { left: 95px; }
+			}
 		}
 	}
 }

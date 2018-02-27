@@ -8,7 +8,12 @@
             <div class="form-wrapper">
                 <div class="form-fit-helper form-group">
                     <input type="text" class="form-control" id="where" placeholder="Hamburg">
-                     <label for="where" class="col-form-label"></label>
+                    <label for="where" class="col-form-label"></label>
+                    <ul class="search-drop dropdown" data-search-dropdown="">
+                        <li><i class="mm mm-iconmap"></i><p>Hamburg</p><span>Stadt, Deutschland (3 Touren)</span></li>
+                        <li><i class="mm mm-iconmap"></i><p>Hamm</p><span>Stadt, Deutschland (2 Touren)</span></li>
+                        <li><i class="mm mm-iconmap"></i><p>Hameln</p><span>Stadt, Deutschland (1 Touren)</span></li>
+                    </ul>
                 </div>
                 <div class="form-fit-helper form-group">
                     <input type="text" class="form-control" id="time" placeholder="29.10.18">

@@ -17,7 +17,7 @@ module.exports = function (grunt) {
 		sass: {
 			compileWebsite: {
 				src: 'stylesheets/website.scss',
-				dest: 'dist/stylesheets/website.css'
+				dest: 'dist/stylesheets/website.css',
 			}
 		},
 
@@ -29,18 +29,9 @@ module.exports = function (grunt) {
                 ]
             },
             dist: {
-                src: 'dist/stylesheets/*.css'
+                src: 'dist/stylesheets/website.css'
             }
         },
-
-		cssnano: {
-			options: {
-				sourcemap: true
-			},
-			dist: {
-				'dist/stylesheets/website.css': 'dist/stylesheets/website.css'
-			}
-		},
 
 		copy: {
             fonts: {
@@ -89,16 +80,6 @@ module.exports = function (grunt) {
 			postcss: {
 				files : ['dist/stylesheets/*.css'],
 				tasks: ['postcss'],
-				options : {
-					livereload: {
-						host: 'localhost',
-						port: 1337
-					}
-				}
-			},
-			css : {
-				files : ['dist/stylesheets/website.css'],
-				tasks: ['cssnano'],
 				options : {
 					livereload: {
 						host: 'localhost',
@@ -157,7 +138,7 @@ module.exports = function (grunt) {
 	});
 
 	// compile tasks
-	grunt.registerTask('compile', ['clean', 'newer:sass', 'newer:postcss', 'newer:cssnano', 'newer:copy']);
+	grunt.registerTask('compile', ['clean', 'sass', 'postcss', 'copy']);
 
 	// watch tasks
 	grunt.registerTask('watch', ['watch']);

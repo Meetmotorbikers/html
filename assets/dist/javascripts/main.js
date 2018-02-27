@@ -2,13 +2,20 @@
 	function bodyHeight() {
 		var headerHeight = $('header').outerHeight();
 		var footerHeight = $('footer').outerHeight();
+		var sortfuncton = $('.sort-function').outerHeight();
 		var headandfooter = headerHeight + footerHeight;
+		var scrolltours = headandfooter + sortfuncton;
+
+		console.log(sortfuncton);
+		console.log(headandfooter);
+		console.log(scrolltours);
 
 		var $theWindowSize = $(this).width();
 
 		if($theWindowSize > 767) {
 			$(window).resize(function() {
 			    $('.gmaps').height($(window).height() - headandfooter);
+			    $('.tours').height($(window).height() - scrolltours);
 			});  
 		};
 
