@@ -12,7 +12,15 @@ home: http://meetmotor.timtoews.de/
 overview: http://meetmotor.timtoews.de/overview.php
 overview logged: http://meetmotor.timtoews.de/overview-logged.php
 
-more <- comming. 
+**DONE**
+Frontpage Web/Mobile
+Map Overview Web/Mobile
+ModalBox Styles
+
+**TODOs**
+Tour Detial
+Profil
+Tour Create
 
 ```
 

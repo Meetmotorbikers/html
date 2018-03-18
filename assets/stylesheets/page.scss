@@ -1,8 +1,8 @@
 .start { @include transition(background-image .2s ease-in); background-color: $secondary; background-image: url(../images/background.jpg); background-position: center center; background-repeat:  no-repeat; background-attachment: fixed; background-size:  cover; background-color: #999; height:100%;
     #content { padding-top: 98px; }
-    .teaser-headline { font-size: 67px; line-height: 77px; color:#fff; margin-bottom: 50px; span.primary-color { color:$primary; } 
-        @include media-breakpoint-down(md) { font-size: 47px; line-height: 57px; }
-        @include media-breakpoint-down(sm) { font-size: 36px; line-height: 37px; }
+    .teaser-headline { font-size: 90px; line-height: 90px; color:#fff; margin-bottom: 50px; span.primary-color { color:$primary; } 
+        @include media-breakpoint-down(md) { font-size: 57px; line-height: 57px; }
+        @include media-breakpoint-down(sm) { font-size: 40px; line-height: 40px; }
     }
     form {
         .form-fit-helper { float: left; position: relative; margin-bottom: 0;
@@ -41,7 +41,7 @@
         @include media-breakpoint-down(md) { padding: 25px 35px; }
         @include media-breakpoint-down(sm) { padding: 15px 25px; }
         .joinded { border-radius: 50px; border: 1px solid $primary; color: $primary; font-size: 12px; padding: 5px 10px; margin-bottom: 12px; line-height: 12px; font-weight: 700; display: inline-block; }
-        h3 { font-family: $oswald; text-transform: uppercase; font-size: 26px; line-height: 30px; margin-top: 0; margin-bottom: 9px; padding: 0; }
+        h3 { font-family: $league-gothic; text-transform: uppercase; font-size: 36px; line-height: 36px; margin-top: 0; margin-bottom: 9px; padding: 0; }
         ul.tour-infos { padding: 0; margin: 0; list-style: none; 
             li { display: inline-block; margin-right: 10px; 
                 &:last-child { margin-right: 0; }
@@ -65,24 +65,26 @@ ul.search-drop { margin: 0; list-style:none; position: absolute; z-index: 100; t
 
 .ui-datepicker {
     .ui-datepicker-header { background: transparent; border: 0; border-radius: 0;
-        // .ui-datepicker-prev {
-        //     .ui-icon { background: transparent !important; color: transparent !important;  
-        //         &:before { content:"\f104"; @include fa-icon(); }
-        //     }
-        // }
-        // .ui-datepicker-next {
-        //     .ui-icon { background: transparent !important; color: transparent !important;  
-        //         &:before { content:"\f105"; @include fa-icon(); }
-        //     }
-        // }
+        .ui-icon { width: 20px; height: 25px; text-indent: 0 !important; background: transparent !important; text-align: center; transform:translateY(-50%); margin-top: 0; }
+        .ui-datepicker-prev,
+        .ui-datepicker-next {
+            &.ui-state-hover, &.ui-datepicker-next-hover, &.ui-datepicker-prev-hover { border: 0 !important; background: transparent !important; }
+        }
+        .ui-datepicker-prev.ui-datepicker-prev-hover { left: 2px !important; top: 2px !important; }
+        .ui-datepicker-next.ui-datepicker-next-hover { right: 2px !important; top: 2px !important; }
+        .ui-datepicker-title span { font-size: 14px; }
     }
     .ui-datepicker-calendar {
-        thead {}
-        tbody {
-            tr {
-                td {}
-                td.ui-datepicker-today {}
-            }
+        thead { border-bottom: 1px solid $border;
+            th { font-weight: 300; padding: 0.3em .3em; }
+            th.ui-datepicker-week-end { font-weight: 700; }
         }
+        tbody > tr > td {
+            .ui-state-default { border: 0px; background: transparent; text-align: center; 
+                &.ui-state-hover { background: lighten($gray,5%); }
+            }
+            &.ui-datepicker-today .ui-state-default { background: lighten($gray,5%); color: $primary; }
+        }
+            
     }
 }

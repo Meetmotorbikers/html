@@ -15,9 +15,14 @@ module.exports = function (grunt) {
 	grunt.initConfig({
 
 		sass: {
-			compileWebsite: {
-				src: 'stylesheets/website.scss',
-				dest: 'dist/stylesheets/website.css',
+			dist: {
+				options:{
+		          style:'compressed',
+		          sourcemap: 'auto'
+		        },
+		        files: {
+					'dist/stylesheets/website.min.css' : 'stylesheets/website.scss'
+				}
 			}
 		},
 
@@ -29,7 +34,7 @@ module.exports = function (grunt) {
                 ]
             },
             dist: {
-                src: 'dist/stylesheets/website.css'
+                src: 'dist/stylesheets/website.min.css'
             }
         },
 
@@ -78,7 +83,7 @@ module.exports = function (grunt) {
 				tasks: 'compile'
 			},
 			postcss: {
-				files : ['dist/stylesheets/*.css'],
+				files : ['dist/stylesheets/website.min.css'],
 				tasks: ['postcss'],
 				options : {
 					livereload: {
@@ -89,7 +94,7 @@ module.exports = function (grunt) {
 			},
 			copy: {
 				files : ['javascripts/**/*.js', 'images/**/*.{png,jpg,jpeg,svg,gif,ico}', 'fonts/**/*.{ttf,eot,woff,woff2,svg}'],
-				tasks: ['newer:copy'],
+				tasks: ['copy'],
 				options: {
 					event: ['added', 'changed'],
 					livereload: {

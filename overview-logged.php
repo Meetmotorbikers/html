@@ -11,23 +11,27 @@
                             <div class="sort-function row">
                                 <div class="col-lg-5">
                                     <div class="form-group clearfix">
-                                        <label for="search-radius">Suchradius</label>
-                                        <div class="select-wrapper">
-                                            <select class="form-control" id="search-radius">
-                                                <option>50KM</option>
-                                                <option>75KM</option>
-                                            </select>
-                                        </div>
+                                        <label for="search-radius">
+                                            <span>Suchradius</span>
+                                            <div class="select-wrapper">
+                                                <select class="form-control" id="search-radius" name="search-radius">
+                                                    <option>50KM</option>
+                                                    <option>75KM</option>
+                                                </select>
+                                            </div>
+                                        </label>
                                     </div>
                                 </div>
                                 <div class="col-lg-7">
                                      <div class="form-group clearfix">
-                                        <label for="sort-date">Sortieren nach</label>
-                                        <div class="select-wrapper">
-                                            <select class="form-control" id="sort-date">
-                                                <option>DATUM</option>
-                                            </select>
-                                        </div>
+                                        <label for="sort-date">
+                                            <span>Sortieren nach</span>
+                                            <div class="select-wrapper">
+                                                <select class="form-control" id="sort-date" name="sort-date">
+                                                    <option>DATUM</option>
+                                                </select>
+                                            </div>
+                                        </label>
                                     </div>
                                 </div>
                             </div>
@@ -83,7 +87,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-8 col-sm-12 col-xs-12 d-none d-sm-none d-md-block gmaps" style="background:url('../html/assets/dist/images/googlemaps.jpg');">
+                        <div class="col-md-8 col-sm-12 col-xs-12 d-none d-sm-none d-md-block gmaps" style="background:url('assets/dist/images/googlemaps.jpg');">
                         </div>
                     </div>
                 </div>

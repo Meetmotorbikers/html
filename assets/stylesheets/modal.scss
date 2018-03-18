@@ -1,0 +1,11 @@
+.modal-backdrop { background: $secondary; &.show { opacity: .8; } }
+.modal .modal-dialog {
+	@include media-breakpoint-up(sm) { max-width: 400px; }
+	.modal-content { border-radius: 0; border: 0; position: relative; }
+	.close { position: absolute; right: 20px; top: 20px; }
+	.modal-title { margin: 0 auto; font-family: $league-gothic; font-size: 36px; text-transform: uppercase; margin-top: 10px; }
+	.modal-header { border: 0; }
+	.modal-footer { border: 0; background: $modal-gray; justify-content: center; padding: 1.5rem; }
+	.modal-footer p { margin: 0; }
+	.modal-header, .modal-body, .modal-footer { padding: 1.5rem 35px; }
+}

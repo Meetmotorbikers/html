@@ -9,7 +9,7 @@
 		label { font-weight: 700; color: $gray; margin: 2px 0; width: 100%;
 			span { position: absolute; top: 15px; left: 45px; }
 			.select-wrapper {
-				select { height: 85px; border: 0px; font-family: $oswald; padding: 20px 0 0 30px; font-size: 18px; @include transition(all 0.177s ease); margin: 0; box-sizing: border-box; appearance:none; 
+				select { height: 85px; border: 0px; font-family: $league-gothic; padding: 20px 0 0 30px; font-size: 22px;  transition: all 0.177s ease; margin: 0; box-sizing: border-box; appearance:none; 
 					&:focus, &:hover { color: $primary; }
 				}
 				&:after { position: absolute; top: 43px; left: 85px; content:''; width: 10px; height: 8px; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid $secondary; float:left; display: block; margin: 10px 0 0 10px; }
@@ -18,5 +18,31 @@
 				.select-wrapper:after { left: 95px; }
 			}
 		}
+	}
+}
+
+.has-float-label { display: block; position: relative;
+	label { position: absolute; left: 0; top: 0; cursor: text; font-size: 75%; opacity: 1; -webkit-transition: all .2s; transition: all .2s; top: -.5em; left: 0.75rem; z-index: 3; line-height: 1; padding: 0 1px;
+		&::after { content: " "; display: block; position: absolute; background: white; height: 2px; top: 50%; left: -.2em; right: -.2em; z-index: -1; }
+	}
+	> span { position: absolute; left: 0; top: 0; cursor: text; font-size: 75%; opacity: 1; -webkit-transition: all .2s; transition: all .2s; top: -.5em; left: 0.75rem; z-index: 3; line-height: 1; padding: 0 1px; }
+	> span::after { content: " "; display: block; position: absolute; background: white; height: 2px; top: 50%; left: -.2em; right: -.2em; z-index: -1; }
+	.form-control { border: transparent; border-bottom: 1px solid $gray; border-radius: 0;
+		&::placeholder { opacity: 1; transition: all .2s; }
+		&:placeholder-shown:not(:focus) {
+			&::placeholder { opacity: 0; }
+			+ * {  font-size: 16px; opacity: 1; top: .6em; }
+		}
+		&:focus { border-color: transparent; border-bottom: 1px solid $gray; box-shadow: none; }
+	}
+}
+
+.input-group .has-float-label { -webkit-box-flex: 1; -webkit-flex-grow: 1; -ms-flex-positive: 1; flex-grow: 1; margin-bottom: 0; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center;
+	.form-control { width: 100%; border-radius: 0; }
+	&:not(:last-child) { border-bottom-right-radius: 0; border-top-right-radius: 0; border-right: 0; 
+		.form-control { border-bottom-right-radius: 0; border-top-right-radius: 0; border-right: 0; }
+	}
+	&:not(:first-child) { border-bottom-left-radius: 0; border-top-left-radius: 0;
+		.form-control { border-bottom-left-radius: 0; border-top-left-radius: 0; }
 	}
 }

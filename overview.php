@@ -87,12 +87,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-8 col-sm-12 col-xs-12 d-none d-sm-none d-md-block gmaps" style="background:url('../html/assets/dist/images/googlemaps.jpg');">
+                        <div class="col-md-8 col-sm-12 col-xs-12 d-none d-sm-none d-md-block gmaps" style="background:url('assets/dist/images/googlemaps.jpg');">
                         </div>
                     </div>
                 </div>
             </main>
             <?php $class = "black"; include "includes/footer.php"; ?>
+            <?php include "includes/login-modal.php"; ?>
         </div>
         <?php include "includes/scripts.php"; ?>
     </body>

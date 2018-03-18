@@ -48,7 +48,7 @@
             <li class="nav-item logged-user">
                 <a class="nav-link" href="#">
                     Alexander
-                    <img src="../html/assets/dist/images/alexander-user.png" alt="Alexander" class="img-responsive">
+                    <img src="assets/dist/images/alexander-user.png" alt="Alexander" class="img-responsive">
                 </a>
             </li>
             <li class="nav-item">

@@ -1,0 +1,37 @@
+.btn-outline { border: $border 1px solid; color: $border; transition:all ease .2s; font-weight:700;
+    &:hover, &:focus { background: $border; color: $primary; }
+}
+.btn-primary { border: 1px solid transparent; background: $primary; color: #fff; transition:all ease .2s; font-weight:700;
+    &:hover, &:focus { border: 1px solid $border; background: transparent; color: $primary; }
+}
+.btn-default { padding: 12px 17px; border-radius: 0; background: $default; color: #fff; transition:all ease .2s; font-weight:700; color: $secondary;
+    &:hover, &:focus { background: darken($default, 5%); color: $secondary; }
+    @include media-breakpoint-down(sm) { width: 100%; }
+}
+.btn-facebook { background: $facebook; border-radius: 0; color: #fff; transition:all ease .2s; font-weight:700; padding: 10px 12px;
+    i { font-size: 22px; line-height: 22px; margin-right: 7px; }
+    &.full { width: 100%; text-align: center; }
+    &:hover, &:focus { background: lighten($facebook, 5%); color: #fff; }
+}
+.btn-google { background: $google; color: #fff; border-radius: 0; transition:all ease .2s; font-weight:700; padding: 10px 12px;
+    i { font-size: 22px; line-height: 22px; margin-right: 7px; }
+    &.full { width: 100%; text-align: center; }
+    &:hover, &:focus { background: lighten($google, 5%); color: #fff; }
+}
+.btn-form-helper { cursor: pointer; width: 100%; height: 90px; vertical-align: middle; display: inline-block; background: $primary; color: #fff; text-align: center; border-radius: 0; border: 0;
+    &:hover, &:focus { background: darken($primary, 15%); }
+    @include media-breakpoint-down(sm) {
+    	height: 60px;
+    }
+}
+.btn-close { position: relative; display: inline-block; width: 25px; height: 25px; overflow: hidden;
+	&::before, &::after { transition: all .111s ease-in; content: ''; position: absolute; height: 1px; width: 100%; top: 50%; left: 0; margin-top: -1px; background: $secondary; }
+	&::before { transform:rotate(45deg); }
+	&::after { transform:rotate(-45deg); }
+}
+button.close { 
+	&:hover, &:focus {
+		.btn-close { &::before, &::after { background: $primary; } }
+	}
+}
+.btn-holder { margin-top: 10px; margin-bottom: 10px; }
