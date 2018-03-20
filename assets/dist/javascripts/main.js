@@ -6,10 +6,6 @@
 		var headandfooter = headerHeight + footerHeight;
 		var scrolltours = headandfooter + sortfuncton;
 
-		console.log(sortfuncton);
-		console.log(headandfooter);
-		console.log(scrolltours);
-
 		var $theWindowSize = $(this).width();
 
 		if($theWindowSize > 767) {
@@ -49,7 +45,26 @@
     	});
 	}
 
+	function toggletab() {
+		var toggleTab = $('[toggle-tab]');
+		var hidden = $('.fade.d-none');
+		var show = $('.fade.show');
+
+		$(toggleTab).on('click', function() {
+			hidden.removeClass('d-none').addClass('show');
+			show.addClass('d-none').removeClass('show');
+		});
+	}
+
+	function togglemodal() {
+		if(window.location.href.indexOf("thanks") > -1) {
+			$('#thanks').modal('show');
+		}
+	}
+
 	bodyHeight();
 	searchDropdown();
 	datepicker();
+	toggletab();
+	togglemodal();
 })(jQuery);

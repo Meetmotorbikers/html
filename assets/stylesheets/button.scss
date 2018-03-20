@@ -1,8 +1,9 @@
 .btn-outline { border: $border 1px solid; color: $border; transition:all ease .2s; font-weight:700;
     &:hover, &:focus { background: $border; color: $primary; }
 }
-.btn-primary { border: 1px solid transparent; background: $primary; color: #fff; transition:all ease .2s; font-weight:700;
-    &:hover, &:focus { border: 1px solid $border; background: transparent; color: $primary; }
+.btn-primary { border: transparent; border-radius: 0; background: $primary; color: #fff; transition:all ease .2s; font-weight:700; padding: 10px 12px;
+    &:hover, &:focus { border: transparent; background: lighten($primary, 5%); color: #fff; }
+    &.full { width: 100%; text-align: center; }
 }
 .btn-default { padding: 12px 17px; border-radius: 0; background: $default; color: #fff; transition:all ease .2s; font-weight:700; color: $secondary;
     &:hover, &:focus { background: darken($default, 5%); color: $secondary; }

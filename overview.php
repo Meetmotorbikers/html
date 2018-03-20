@@ -94,6 +94,8 @@
             </main>
             <?php $class = "black"; include "includes/footer.php"; ?>
             <?php include "includes/login-modal.php"; ?>
+            <?php include "includes/register-modal.php"; ?>
+            <?php include "includes/thanks-modal.php"; ?>
         </div>
         <?php include "includes/scripts.php"; ?>
     </body>

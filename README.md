@@ -12,10 +12,21 @@ home: http://meetmotor.timtoews.de/
 overview: http://meetmotor.timtoews.de/overview.php
 overview logged: http://meetmotor.timtoews.de/overview-logged.php
 
+register: http://meetmotor.timtoews.de/overview.php
+(link register)
+
+register-email: http://meetmotor.timtoews.de/overview.php
+(link register <- on click button "Mit E-Mail registrieren")
+
+einloggen: http://meetmotor.timtoews.de/overview.php
+(link einloggen)
+
+thanks: http://meetmotor.timtoews.de/overview.php#thanks
+
 **DONE**
 Frontpage Web/Mobile
 Map Overview Web/Mobile
-ModalBox Styles
+ModalBox Web/Mobile
 
 **TODOs**
 Tour Detial
