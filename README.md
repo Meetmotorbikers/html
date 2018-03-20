@@ -2,14 +2,14 @@
 **Build with Bootstrap v4.0**
 
 **DONE**
-- Frontpage Web/Mobile
-- Map Overview Web/Mobile
-- ModalBox Web/Mobile
+- [x] Frontpage Web/Mobile
+- [x] Map Overview Web/Mobile
+- [x] ModalBox Web/Mobile
 
 **TODOs**
-- Tour Detial
-- Profil
-- Tour Create
+- [ ] Tour Detial
+- [ ] Profil
+- [ ] Tour Create
 
 **DEMO**
 ```
