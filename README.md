@@ -1,6 +1,16 @@
 # Meetmotorbikers - HTML Layout
 **Build with Bootstrap v4.0**
 
+**DONE**
+- Frontpage Web/Mobile
+- Map Overview Web/Mobile
+- ModalBox Web/Mobile
+
+**TODOs**
+- Tour Detial
+- Profil
+- Tour Create
+
 **DEMO**
 ```
 http://meetmotor.timtoews.de/
@@ -25,17 +35,6 @@ thanks: http://meetmotor.timtoews.de/overview.php#thanks
 
 ```
 
-**DONE**
-Frontpage Web/Mobile
-Map Overview Web/Mobile
-ModalBox Web/Mobile
-
-**TODOs**
-Tour Detial
-Profil
-Tour Create
-
-
 **How to install?**
 ```
 cd root/assets
@@ -47,15 +46,15 @@ change css or js?
 ```
 
 **package.json**
-devDependencies:
-autoprefixer: ^8.0.0
-grunt: ~0.4.5
-grunt-contrib-clean: ^1.1.0
-grunt-contrib-compress: ~0.13.0
-grunt-contrib-copy: ~1.0.0
-grunt-contrib-sass: ~1.0.0
-grunt-contrib-watch: ~0.6.1
-grunt-cssnano: ^2.1.0
-grunt-newer: ~1.1.2
-grunt-postcss: ^0.9.0
-load-grunt-tasks: ~3.2.0
+- devDependencies:
+- autoprefixer: ^8.0.0
+- grunt: ~0.4.5
+- grunt-contrib-clean: ^1.1.0
+- grunt-contrib-compress: ~0.13.0
+- grunt-contrib-copy: ~1.0.0
+- grunt-contrib-sass: ~1.0.0
+- grunt-contrib-watch: ~0.6.1
+- grunt-cssnano: ^2.1.0
+- grunt-newer: ~1.1.2
+- grunt-postcss: ^0.9.0
+- load-grunt-tasks: ~3.2.0
