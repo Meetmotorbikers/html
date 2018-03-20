@@ -2,14 +2,33 @@
 **Build with Bootstrap v4.0**
 
 **DONE**
-- [x] Frontpage Web/Mobile
-- [x] Map Overview Web/Mobile
-- [x] ModalBox Web/Mobile
+- [x] Assets Structure
+- [x] Bootstrap v4.0 Build
+- [x] Grunt SCSS Compile/Minify to CSS
+
+- [x] Startseite Web/Mobile
+- [x] Startseite -> Eingeloggt
+- [x] Map Übersicht Web/Mobile
+- [x] Map Übersicht -> Eingeloggt
+- [x] Map Übersicht -> Nicht Eingeloggt
+- [x] Map Übersicht -> Stadt Suche
+- [x] Map Übersicht -> Kalendar
+- [x] Map Übersicht -> Einloggen Overlay
+- [x] Map Übersicht -> Registrieren Overlay
+- [x] Map Übersicht -> Registrieren Mail Overlay
+- [x] Map Übersicht -> Thanks Overlay
 
 **TODOs**
-- [ ] Tour Detial
-- [ ] Profil
-- [ ] Tour Create
+- [ ] Tour Detail Page
+- [ ] Profil / Freunde
+- [ ] Profil (loggt) -> Anstehende Touren
+- [ ] Profil (loggt) -> gefahrene Tour
+- [ ] Profil (loggt) -> Profil Einstellungen
+- [ ] Profil (loggt) -> Benachrichtigungen
+- [ ] Profil (loggt) -> angenommen
+- [ ] Profil (loggt) -> Profil gesperrt
+- [ ] Profil (loggt) -> Anstehende Touren
+- [ ] Tour erstellen
 
 **DEMO**
 ```
