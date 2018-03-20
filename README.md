@@ -1,10 +1,13 @@
 # Meetmotorbikers - HTML Layout
 **Build with Bootstrap v4.0**
 
-**DONE**
+**BASICS**
 - [x] Assets Structure
 - [x] Bootstrap v4.0 Build
 - [x] Grunt SCSS Compile/Minify to CSS
+- [x] Font Install
+
+**DONE**
 - [x] Startseite Web/Mobile
 - [x] Startseite -> Eingeloggt
 - [x] Map Übersicht Web/Mobile
