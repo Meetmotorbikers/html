@@ -4,11 +4,11 @@
             <?php $class = "red"; include "includes/logo.php"; ?>
         </a>
 
-        <a class="back-button" href="/overview.php" title="zurück zur Übersicht"><i class="fa fa-angle-left"></i> Zurück zur Übersicht</a>
+        <a class="back-button" href="overview.php" title="zurück zur Übersicht"><i class="fa fa-angle-left"></i> Zurück zur Übersicht</a>
 
         <ul class="navbar-nav ml-auto order-1 order-sm-1 order-md-1 order-lg-12">
             <li class="nav-item logged-user">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="profil-logged.php">
                     Alexander
                     <img src="assets/dist/images/alexander-user.png" alt="Alexander" class="img-responsive">
                 </a>

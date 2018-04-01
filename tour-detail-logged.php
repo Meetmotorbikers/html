@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
-    <?php $title = "Tour Detail"; include "includes/head.php"; ?>
+    <?php $title = "Tour Detail Logged"; include "includes/head.php"; ?>
     <body class="page">
         <div class="d-flex h-100 mx-auto flex-column">
             <?php include "includes/header-logged-back.php"; ?>
@@ -35,32 +35,32 @@
                             <h3>Teilnehmer</h3>
                             <ul class="user-list">
                                 <li>
-                                    <a href="#" title="profillink">
+                                    <a href="profil-blocked.php" title="profillink">
                                         <img src="assets/dist/images/user-1.png" alt="user-1" width="59" height="59" />
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" title="profillink">
+                                    <a href="profil-blocked.php" title="profillink">
                                         <img src="assets/dist/images/user-2.png" alt="user-2" width="59" height="59" />
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" title="profillink">
+                                    <a href="profil-blocked.php" title="profillink">
                                         <img src="assets/dist/images/user-3.png" alt="user-3" width="59" height="59" />
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" title="profillink">
+                                    <a href="profil-blocked.php" title="profillink">
                                         <img src="assets/dist/images/user-4.png" alt="user-4" width="59" height="59" />
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" title="profillink">
+                                    <a href="profil-blocked.php" title="profillink">
                                         <img src="assets/dist/images/user-5.png" alt="user-5" width="59" height="59" />
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" title="profillink">
+                                    <a href="profil-blocked.php" title="profillink">
                                         <img src="assets/dist/images/user-6.png" alt="user-6" width="59" height="59" />
                                     </a>
                                 </li>

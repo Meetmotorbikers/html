@@ -23,7 +23,7 @@ header {
 		    .navbar-nav {
 		        .nav-item {
 		            .nav-link { color: $border; transition: all ease .2s;
-		                &:hover, &:focus { color: $primary; }
+		                &:hover, &:focus { color: $primary !important; }
 						&.btn { border-radius: 0; }
 		            }
 		        }

@@ -5,10 +5,10 @@
         </a>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item active d-none d-sm-none d-md-block">
-                <a class="nav-link" href="#">Registrieren</a>
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#register">Registrieren</a>
             </li>
             <li class="nav-item d-none d-sm-none d-md-block">
-                <a class="nav-link" href="#">Einloggen</a>
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#login">Einloggen</a>
             </li>
             <li class="nav-item d-lg-none d-md-none">
                 <a class="nav-link" href="#"><i class="mm mm-iconuser"></i></a>

@@ -13,7 +13,7 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
-                            <form>
+                            <form action="overview.php">
                                 <div class="form-fit-helper form-group">
                                     <label for="where" class="col-form-label"></label>
                                     <input type="text" class="form-control" id="where" placeholder="Wo">
@@ -41,6 +41,9 @@
                 </div>
             </main>
             <?php $class = "white"; include "includes/footer.php"; ?>
+            <?php include "includes/login-modal.php"; ?>
+            <?php include "includes/register-modal.php"; ?>
+            <?php include "includes/thanks-modal.php"; ?>
         </div>
         <?php include "includes/scripts.php"; ?>
     </body>

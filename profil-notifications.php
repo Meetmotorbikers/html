@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
-    <?php $title = "Tour Detail"; include "includes/head.php"; ?>
+    <?php $title = "Profil Notifications"; include "includes/head.php"; ?>
     <body class="page">
         <div class="d-flex h-100 mx-auto flex-column">
             <?php include "includes/header-logged-back.php"; ?>
@@ -16,10 +16,10 @@
 	                        <h1>Alexander Schmidt</h1>
 	                        <h2 class="h5">KAWASAKI Z800</h2>
 	                        <ul class="profil-navigation pt-3 pb-3 mt-5 mb-4 text-left">
-	                        	<li><a href="#" title="Profil"><i class="mm-iconuser"></i> Profil</a></li>
-	                        	<li class="active"><a href="#" title="Benachrichtigungen"><i class="mm-iconnotification"></i> Benachrichtigungen <span class="mm-notification">1</span></a></li>
-	                        	<li><a href="#" title="Profil Einstellungen"><i class="mm-iconcok"></i> Profil Einstellungen</a></li>
-	                        	<li><a href="#" title="Ausloggen"><i class="mm-iconlogout"></i> Ausloggen</a></li>
+	                        	<li><a href="profil-logged.php" title="Profil"><i class="mm-iconuser"></i> Profil</a></li>
+	                        	<li class="active"><a href="profil-notifications.php" title="Benachrichtigungen"><i class="mm-iconnotification"></i> Benachrichtigungen <span class="mm-notification">1</span></a></li>
+	                        	<li><a href="profil-settings.php" title="Profil Einstellungen"><i class="mm-iconcok"></i> Profil Einstellungen</a></li>
+	                        	<li><a href="overview.php" title="Ausloggen"><i class="mm-iconlogout"></i> Ausloggen</a></li>
 	                        </ul>
                         </div>
                         <div class="col-12 col-sm-6 col-md-8 col-lg-9 profil-content">

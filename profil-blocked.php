@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
-    <?php $title = "Tour Detail"; include "includes/head.php"; ?>
+    <?php $title = "Profil Blocked"; include "includes/head.php"; ?>
     <body class="page">
         <div class="d-flex h-100 mx-auto flex-column">
             <?php include "includes/header-logged-back.php"; ?>

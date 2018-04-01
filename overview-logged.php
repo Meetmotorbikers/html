@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
-    <?php $title = "Overview"; include "includes/head.php"; ?>
+    <?php $title = "Overview Logged"; include "includes/head.php"; ?>
     <body class="page">
         <div class="d-flex h-100 mx-auto flex-column">
             <?php include "includes/header-logged.php"; ?>
