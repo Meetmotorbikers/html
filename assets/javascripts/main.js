@@ -12,6 +12,8 @@
 			$(window).resize(function() {
 			    $('.gmaps').height($(window).height() - headandfooter);
 			    $('.tours').height($(window).height() - scrolltours);
+			    $('.profil').height($(window).height() - headandfooter);
+			    $('.profil-content').height($(window).height() - headandfooter);
 			});  
 		};
 

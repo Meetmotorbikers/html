@@ -38,13 +38,15 @@
 
                             <div class="row tours">
                                 <div class="tour-card">
-                                    <span class="joinded">Du nimmst teil</span>
-                                    <h3>Tour durch den hohen Norden</h3>
-                                    <ul class="tour-infos">
-                                        <li><i class="mm mm-iconcalendar"></i><span>in 2 Tagen</span></li>
-                                        <li><i class="mm mm-iconclock"></i><span>14:30 Uhr</span></li>
-                                        <li><i class="mm mm-iconhead"></i><span>10/10 max. teiln.</span></li>
-                                    </ul>
+                                    <a href="tour-detail.php" title="tour-detail">
+                                        <span class="joinded">Du nimmst teil</span>
+                                        <h3>Tour durch den hohen Norden</h3>
+                                        <ul class="tour-infos">
+                                            <li><i class="mm mm-iconcalendar"></i><span>in 2 Tagen</span></li>
+                                            <li><i class="mm mm-iconclock"></i><span>14:30 Uhr</span></li>
+                                            <li><i class="mm mm-iconhead"></i><span>10/10 max. teiln.</span></li>
+                                        </ul>
+                                    </a>
                                 </div>
                                 <div class="tour-card">
                                     <h3>HAFENRUNDFAHRT</h3>
@@ -62,13 +64,15 @@
                                     </ul>
                                 </div>
                                 <div class="tour-card">
-                                    <span class="joinded">Du nimmst teil</span>
-                                    <h3>Tour durch den hohen Norden</h3>
-                                    <ul class="tour-infos">
-                                        <li><i class="mm mm-iconcalendar"></i><span>in 2 Tagen</span></li>
-                                        <li><i class="mm mm-iconclock"></i><span>14:30 Uhr</span></li>
-                                        <li><i class="mm mm-iconhead"></i><span>10/10 max. teiln.</span></li>
-                                    </ul>
+                                    <a href="tour-detail.php" title="tour-detail">
+                                        <span class="joinded">Du nimmst teil</span>
+                                        <h3>Tour durch den hohen Norden</h3>
+                                        <ul class="tour-infos">
+                                            <li><i class="mm mm-iconcalendar"></i><span>in 2 Tagen</span></li>
+                                            <li><i class="mm mm-iconclock"></i><span>14:30 Uhr</span></li>
+                                            <li><i class="mm mm-iconhead"></i><span>10/10 max. teiln.</span></li>
+                                        </ul>
+                                    </a>
                                 </div>
                                 <div class="tour-card">
                                     <h3>HAFENRUNDFAHRT</h3>

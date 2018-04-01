@@ -40,14 +40,15 @@
     .tour-card { padding: 30px 45px; border-bottom: 1px solid $border; width: 100%;
         @include media-breakpoint-down(md) { padding: 25px 35px; }
         @include media-breakpoint-down(sm) { padding: 15px 25px; }
-        .joinded { border-radius: 50px; border: 1px solid $primary; color: $primary; font-size: 12px; padding: 5px 10px; margin-bottom: 12px; line-height: 12px; font-weight: 700; display: inline-block; }
         h3 { font-family: $league-gothic; text-transform: uppercase; font-size: 36px; line-height: 36px; margin-top: 0; margin-bottom: 9px; padding: 0; }
-        ul.tour-infos { padding: 0; margin: 0; list-style: none; 
-            li { display: inline-block; margin-right: 10px; 
-                &:last-child { margin-right: 0; }
-                i { margin-right: 5px; }
-            }
-        }
+    }
+}
+
+ul.tour-infos { padding: 0; margin: 0; list-style: none; 
+    li { display: inline-block; margin-right: 10px; 
+        span { color: $text; }
+        &:last-child { margin-right: 0; }
+        i { color: $text; margin-right: 5px; }
     }
 }
 
@@ -88,3 +89,112 @@ ul.search-drop { margin: 0; list-style:none; position: absolute; z-index: 100; t
             
     }
 }
+
+.tour-detail {
+    h1 { font-size: 76px; line-height: 70px; margin-top: 10px; 
+        @include media-breakpoint-down(md) { font-size: 56px; line-height: 50px;  }
+    }
+    h3 { font-family: $league-gothic; font-size: 36px; color: $gray; text-transform: uppercase; margin-bottom: 10px; }
+    .btn-holder [class*="col-"] {
+        @media (max-width:1205px) and (min-width:991px) { width: 100% !important; flex: 0 0 100% !important; max-width: 100% !important; }
+    }
+}
+
+.steps-timeline { @include make-row();
+    .step { @include make-col-ready(); @include make-col(4);
+        &:before { content: ''; text-align: center; display: block; width: 28px; height: 28px; border: 1px solid $primary; border-radius: 100px; color: $primary; font-family: $league-gothic; font-size: 15px; background: #fff; position: relative; z-index: 1000; }
+        &:after { content: ''; position: absolute; width: 89%; top: 11px; left: 50px; border-width: 0 0 6px 0; border-style: dotted; border-color: $gray; border-image-source: url(../images/dots.svg); border-image-slice: 25% 20%; border-image-repeat: round; }
+        @include media-breakpoint-down(sm) {
+            @include make-col(12);
+        }
+        &:nth-child(1) { &:before { content: '1'; } }
+        &:nth-child(2) { &:before { content: '2'; } }
+        &:nth-child(3) { &:before { content: '3'; } &:after { display: none; @include media-breakpoint-down(sm) { display: block; } } }
+        h4 { font-family: $league-gothic; font-size: 22px; text-transform: uppercase; margin-bottom: 0px; letter-spacing: 0px; }
+    }
+}
+
+ul.user-list { list-style: none; padding: 0;  
+    li { display: inline-block; margin-right: 10px; 
+        &:last-child { margin-right: 0; }
+    }
+}
+
+.profil {
+    h1 { font-size: 36px; line-height: 30px; color: #fff; letter-spacing: 0; margin: 10px 0; padding: 0; }
+    h2 { font-size: 22px; line-height: 22px; color: $text; font-family: $league-gothic; letter-spacing: 0; margin: 0; padding: 0; }
+}
+
+ul.profil-navigation { list-style: none; padding: 0; margin: 0 5px; border-top: 1px solid #283542; border-bottom: 1px solid #283542; 
+    li { margin-bottom: 10px;
+        a { color: $text; text-decoration: none; transition: all .111s ease-in;
+            i { color: $text; margin-right: 10px; transition: all .111s ease-in; }
+            &:hover, &:focus { color: #fff;
+                i { color: #fff; }
+            }
+        }
+        &.active { 
+            a { color: #fff; 
+                i { color: #fff; }
+            }
+        }
+        &:last-child { margin-bottom: 0; }
+    }
+}
+
+.mm-notification { background: $primary; font-size: 10px; text-align: center; padding: 1px 5px; color: #fff; border-radius: 100px; }
+
+.nav-tabs-mm { margin-bottom: 30px; 
+    &:after { content: ''; width: 100%; display: block; height: 1px; background: $border; }
+    a { color: $gray; font-weight: 700; padding: 0; margin-right: 25px; transition: all .111s ease-in;
+        &:hover, &:focus { text-decoration: none; color: $secondary; }
+         &:after { margin-top: 15px; content: ''; width: 0%; display: block; height: 2px; background: transparent; transition: all .111s ease-in; }
+        &.active { color: $secondary; 
+            &:after { margin-top: 15px; content: ''; width: 100%; display: block; height: 2px; background: $primary; }
+        }
+        &:last-child { margin-right: 0; }
+    }
+}
+
+.mm-card { border: 1px solid #E5E5E5; 
+    h3 { font-family: $league-gothic; font-size: 38px; line-height: 38px; margin: 0 0 10px 0; }
+    ul.tour-infos { 
+        li { width: 100%; margin-bottom: 7px; &:last-child { margin-bottom: 0; } }
+    }
+}
+
+.profil-content { overflow-y: scroll; }
+
+.friend {
+    .user-name { display: block; color: $secondary; font-size: 22px; font-family: $league-gothic; text-transform: uppercase; margin-top: 15px; }
+}
+
+.profil-settings {
+    .has-float-label { margin-bottom: 30px;
+        label { font-weight: 700; color: $secondary; font-size: 16px; margin-bottom: 10px; top: -13px; }
+    }
+    strong { color: $secondary; }
+    h3 { font-family: $league-gothic; font-size: 36px; color: $gray; text-transform: uppercase; margin-bottom: 10px; }
+}
+
+ul.add-friends { list-style: none; padding: 0; margin: 0; 
+    li { margin-top: 25px;
+        &:first-child { margin-top: 0; } 
+        &:after { content: ''; width: calc(100% - 30px); margin: 25px auto 0; height: 1px; background: $gray; display: block; }
+        .btn { margin-right: 10px;
+            &:last-child { margin-right: 0; }
+        } 
+        @include media-breakpoint-down(md) { 
+            .image-round { display: block; text-align: left; }
+            span { margin: 10px 0; display: block; }
+            .btn { width: 100%; margin: 0; } 
+        }
+        @include media-breakpoint-down(sm) { 
+            .image-round { display: block; text-align: center; }
+            .btn { width: 100%; margin-bottom: 10px;
+                &:last-child { margin-bottom: 0; }
+            } 
+        }
+    }
+}
+

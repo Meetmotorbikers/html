@@ -1,1 +1,8 @@
 button.close { &:hover, &:focus { opacity: 1; } opacity: 1; }
+.dark-bg { background: $secondary; }
+.image-round { background: #fff; border-radius: 300px; display: inline-block; padding: 3px;
+	.round-holder { border-radius: 300px; overflow: hidden; display: block; margin: auto; }
+}
+.shadow { box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+.blured { img { filter: blur(10px); } }
+.blocked { position: relative; &:after { content:'\e90c'; font-family: 'meetmotor-icons' !important; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; display: block; color:#fff; font-size: 50px; position: absolute; right: 0; top: 50%; left: 50%; transform:translate(-50%,-50%); } }

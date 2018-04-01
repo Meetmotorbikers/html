@@ -21,15 +21,15 @@
 - [x] Map Übersicht -> Thanks Overlay
 
 **TODOs**
-- [ ] Tour Detail Page
-- [ ] Profil / Freunde
-- [ ] Profil (loggt) -> Anstehende Touren
-- [ ] Profil (loggt) -> gefahrene Tour
-- [ ] Profil (loggt) -> Profil Einstellungen
-- [ ] Profil (loggt) -> Benachrichtigungen
-- [ ] Profil (loggt) -> angenommen
-- [ ] Profil (loggt) -> Profil gesperrt
-- [ ] Profil (loggt) -> Anstehende Touren
+- [x] Tour Detail Page
+- [x] Profil / Freunde
+- [x] Profil (loggt) -> Anstehende Touren
+- [x] Profil (loggt) -> gefahrene Tour
+- [x] Profil (loggt) -> Profil Einstellungen
+- [x] Profil (loggt) -> Benachrichtigungen
+- [x] Profil (loggt) -> angenommen
+- [x] Profil (loggt) -> Profil gesperrt
+- [x] Profil (loggt) -> Anstehende Touren
 - [ ] Tour erstellen
 
 **DEMO**
@@ -53,6 +53,21 @@ einloggen: http://meetmotor.timtoews.de/overview.php
 (link einloggen)
 
 thanks: http://meetmotor.timtoews.de/overview.php#thanks
+
+tour-detail: http://meetmotor.timtoews.de/tour-detail.php
+
+tour-detail (logged): http://meetmotor.timtoews.de/tour-detail-logged.php
+
+profil: http://meetmotor.timtoews.de/profil-logged.php
+
+profil notification: http://meetmotor.timtoews.de/profil-notification.php
+
+profil notification congratulation popup: http://meetmotor.timtoews.de/profil-notification.php
+(link Annehmen)
+
+profil settings: http://meetmotor.timtoews.de/profil-settings.php
+
+profil blocked: http://meetmotor.timtoews.de/profil-blocked.php
 
 ```
 

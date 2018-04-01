@@ -53,3 +53,13 @@
 	& + label:before { content: ''; margin-right: 10px; display: inline-block; vertical-align: text-top; margin-left: -30px; width: 20px; height: 20px; border:2px solid darken($border,5%); transition: all 0.177s ease; }
 	&:checked + label:after { content: ''; position: absolute; left: 5px; top: 9px; background: $primary; width: 2px; height: 2px; box-shadow:  2px 0 0 $primary, 4px 0 0 $primary, 4px -2px 0 $primary, 4px -4px 0 $primary, 4px -6px 0 $primary, 4px -8px 0 $primary; transform: rotate(45deg); }
 }
+
+.form-group.select-type {
+	p { margin: 0; }
+	.select-wrap { position: relative;
+		select.form-control { border: 0px; border-bottom: 1px solid $gray; border-radius: 0; appearance:none; padding: 0; 
+			&:focus { box-shadow: none; }
+		}
+		&:after { content:$fa-var-angle-down; @include fa-icon(); position: absolute; right: 0; top: 10px; }
+	}
+}
