@@ -4,7 +4,7 @@
     <body class="page">
         <div class="d-flex h-100 mx-auto flex-column">
             <?php include "includes/header-logged-back.php"; ?>
-            <main class="tour-detail p-5">
+            <main class="tour-detail content-spacer">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xs-12 col-md-6 col-lg-8">

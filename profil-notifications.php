@@ -23,7 +23,7 @@
 	                        </ul>
                         </div>
                         <div class="col-12 col-sm-6 col-md-8 col-lg-9 profil-content">
-                        	<div class="p-5">
+                        	<div class="content-spacer">
 	                            <h3>Benachrichtigungen</h3>
 	                            <hr class="mt-4 mb-4" />
 	                            <ul class="add-friends">

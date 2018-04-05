@@ -26,76 +26,72 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-@function unicode($str) {
-  @return unquote("\"") + $str + unquote("\"");
-}
-
 .mm-iconlogo {
   &:before {
-    content: unicode($mm-iconlogo);     
+    content: $mm-iconlogo;     
     color: #fff;
   }
 }
 .mm-iconlocked {
   &:before {
-    content: unicode($mm-iconlocked);     
+    content: $mm-iconlocked;     
     color: #fff;
   }
 }
 .mm-iconbike {
   &:before {
-    content: unicode($mm-iconbike);     
+    content: $mm-iconbike;     
     color: #d9dbde;
   }
 }
 .mm-iconcalendar {
   &:before {
-    content: unicode($mm-iconcalendar); 
+    content: $mm-iconcalendar; 
   }
 }
 .mm-iconclock {
   &:before {
-    content: unicode($mm-iconclock); 
+    content: $mm-iconclock; 
   }
 }
 .mm-iconcok {
   &:before {
-    content: unicode($mm-iconcok); 
+    content: $mm-iconcok; 
   }
 }
 .mm-iconfacebook {
   &:before {
-    content: unicode($mm-iconfacebook); 
+    content: $mm-iconfacebook; 
   }
 }
 .mm-icongoogle {
   &:before {
-    content: unicode($mm-icongoogle); 
+    content: $mm-icongoogle; 
   }
 }
 .mm-iconhead {
   &:before {
-    content: unicode($mm-iconhead); 
+    content: $mm-iconhead; 
   }
 }
 .mm-iconlogout {
   &:before {
-    content: unicode($mm-iconlogout); 
+    content: $mm-iconlogout; 
   }
 }
 .mm-iconmap {
   &:before {
-    content: unicode($mm-iconmap); 
+    content: $mm-iconmap; 
   }
 }
 .mm-iconnotification {
   &:before {
-    content: unicode($mm-iconnotification); 
+    content: $mm-iconnotification; 
   }
 }
 .mm-iconuser {
   &:before {
-    content: unicode($mm-iconuser); 
+    content: $mm-iconuser; 
   }
 }
 

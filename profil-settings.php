@@ -23,7 +23,7 @@
 	                        </ul>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-8 col-lg-9 profil-content">
-                        	<div class="p-5">
+                        	<div class="content-spacer">
 	                            <h3>Profil Einstellungen</h3>
 	                            <hr class="mt-4 mb-5" />
 	                            <div class="row">

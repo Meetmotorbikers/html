@@ -19,8 +19,6 @@
 - [x] Map Übersicht -> Registrieren Overlay
 - [x] Map Übersicht -> Registrieren Mail Overlay
 - [x] Map Übersicht -> Thanks Overlay
-
-**TODOs**
 - [x] Tour Detail Page
 - [x] Profil / Freunde
 - [x] Profil (loggt) -> Anstehende Touren
@@ -30,7 +28,10 @@
 - [x] Profil (loggt) -> angenommen
 - [x] Profil (loggt) -> Profil gesperrt
 - [x] Profil (loggt) -> Anstehende Touren
-- [ ] Tour erstellen
+- [x] Tour erstellen
+
+**TODOs**
+- [ ] Mobile Überarbeitung
 
 **DEMO**
 ```
@@ -68,6 +69,8 @@ profil notification congratulation popup: http://meetmotor.timtoews.de/profil-no
 profil settings: http://meetmotor.timtoews.de/profil-settings.php
 
 profil blocked: http://meetmotor.timtoews.de/profil-blocked.php
+
+create tour: http://meetmotor.timtoews.de/create-tour.php
 
 ```
 

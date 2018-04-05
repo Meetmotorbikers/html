@@ -18,7 +18,7 @@
 	                        <a href="#" title="add friend" class="mt-5 btn btn-dark">Als Freund hinzufügen</a>
                         </div>
                         <div class="col-12 col-sm-6 col-md-8 col-lg-9 align-self-center">
-                        	<div class="p-5 text-center">
+                        	<div class="content-spacer text-center">
 	                            <h3 class="mt-5">Profil Ansicht Privat</h3>
 	                            <div class="pt-3 pb-4">
 	                        		<span class="image-round blured shadow blocked align-middle">

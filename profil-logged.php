@@ -23,7 +23,7 @@
 	                        </ul>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-8 col-lg-9 profil-content">
-                        	<div class="p-5">
+                        	<div class="content-spacer">
 								<nav>
 									<div class="nav nav-tabs-mm" id="nav-tab" role="tablist">
 										<a class="nav-item active" id="nav-next-tours-tab" data-toggle="tab" href="#nav-next-tours" role="tab" aria-controls="nav-next-tours" aria-selected="true">

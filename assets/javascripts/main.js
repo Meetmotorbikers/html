@@ -10,10 +10,8 @@
 
 		if($theWindowSize > 767) {
 			$(window).resize(function() {
-			    $('.gmaps').height($(window).height() - headandfooter);
+			    $('.gmaps, .profil, .profil-content, .create-tour-content').height($(window).height() - headandfooter);
 			    $('.tours').height($(window).height() - scrolltours);
-			    $('.profil').height($(window).height() - headandfooter);
-			    $('.profil-content').height($(window).height() - headandfooter);
 			});  
 		};
 
@@ -32,7 +30,7 @@
 	}
 
 	function datepicker() {
-    	$( "#time" ).datepicker({
+    	$( "#time, #date" ).datepicker({
     		firstDay: 1,
     		prevText: '<i class="fa fa-angle-left"></i>',
     		nextText: '<i class="fa fa-angle-right"></i>',
@@ -44,6 +42,10 @@
 			dayNamesShort: ['So','Mo','Di','Mi','Do','Fr','Sa'],
 			dayNamesMin: ['So','Mo','Di','Mi','Do','Fr','Sa'],
 			dateFormat:'d MM, y'
+    	});
+
+    	$('#timeonly').timepicker({
+    		'timeFormat': 'H:i:s'
     	});
 	}
 
@@ -64,9 +66,25 @@
 		}
 	}
 
+	function dataviewSwitcher() {
+		var button = $('[data-view-switcher]');
+		var viewList = $('[data-view-list]');
+		var viewCard = $('[data-view-card]');
+
+		console.log(viewCard.find('.d-none.d-sm-none').length < 1);
+
+		$(button).on('click', function() {
+			if (viewCard.find('.d-none.d-sm-none').length < 1 ) {
+				viewCard.toggleClass('d-none d-sm-none');
+				viewList.toggleClass('d-none');
+			}
+		});
+	}
+
 	bodyHeight();
 	searchDropdown();
 	datepicker();
 	toggletab();
 	togglemodal();
+	dataviewSwitcher();
 })(jQuery);

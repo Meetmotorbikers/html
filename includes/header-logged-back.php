@@ -1,6 +1,6 @@
 <header>
     <nav class="navbar">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="overview.php">
             <?php $class = "red"; include "includes/logo.php"; ?>
         </a>
 
@@ -14,7 +14,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link btn btn-primary" href="#">Tour erstellen</a>
+                <a class="nav-link btn btn-primary" href="create-tour.php">Tour erstellen</a>
             </li>
         </ul>
     </nav>

@@ -1,6 +1,6 @@
 <header>
     <nav class="navbar">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="overview.php">
             <?php $class = "red"; include "includes/logo.php"; ?>
         </a>
 
@@ -32,14 +32,14 @@
             </div>
             <div class="row btn-holder d-lg-none d-md-none">
                 <div class="col-6">
-                    <a href="#" class="btn btn-default">
+                    <button class="btn btn-default" data-toggle="modal" data-target="#searchfilter">
                         Suchradius & Filter
-                    </a>
+                    </button>
                 </div>
                 <div class="col-6">
-                    <a href="#" class="btn btn-default">
+                    <button class="btn btn-default" data-view-switcher>
                         Kartenansicht
-                    </a>
+                    </button>
                 </div>
             </div>
         </form>
@@ -52,10 +52,10 @@
                 <a class="nav-link" href="#" data-toggle="modal" data-target="#login">Einloggen</a>
             </li>
             <li class="nav-item d-lg-none d-md-none">
-                <a class="nav-link" href="#"><i class="mm mm-iconuser"></i></a>
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#login"><i class="mm mm-iconuser"></i></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link btn btn-primary" href="#">Tour erstellen</a>
+                <a class="nav-link btn btn-primary" href="create-tour.php">Tour erstellen</a>
             </li>
         </ul>
     </nav>

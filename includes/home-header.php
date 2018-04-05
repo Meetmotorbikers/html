@@ -1,6 +1,6 @@
 <header class="mb-auto">
     <nav class="bg-nav navbar">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
             <?php $class = "white"; include "includes/logo.php"; ?>
         </a>
         <ul class="navbar-nav ml-auto">
@@ -14,7 +14,7 @@
                 <a class="nav-link" href="#"><i class="mm mm-iconuser"></i></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link btn btn-outline" href="#">Tour erstellen</a>
+                <a class="nav-link btn btn-outline" href="create-tour.php">Tour erstellen</a>
             </li>
         </ul>
     </nav>

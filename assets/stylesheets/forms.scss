@@ -1,3 +1,7 @@
+.form-control { color: $secondary;
+	&:focus { box-shadow: none !important; }
+}
+
 .sort-function { border-bottom: 1px solid $border;
     @include media-breakpoint-down(sm) { display:none; }
 	[class*="col-"]:first-child {
@@ -22,7 +26,7 @@
 }
 
 .has-float-label { display: block; position: relative;
-	label { position: absolute; left: 0; top: 0; cursor: text; font-size: 75%; opacity: 1; -webkit-transition: all .2s; transition: all .2s; top: -.5em; left: 0; z-index: 3; line-height: 1; padding: 0 1px;
+	label { position: absolute; left: 0; top: 0; color: $secondary; cursor: text; font-size: 75%; opacity: 1; -webkit-transition: all .2s; transition: all .2s; top: -.5em; left: 0; z-index: 3; line-height: 1; padding: 0 1px;
 		&::after { content: " "; display: block; position: absolute; background: white; height: 2px; top: 50%; left: -.2em; right: -.2em; z-index: -1; }
 	}
 	> span { position: absolute; left: 0; top: 0; cursor: text; font-size: 75%; opacity: 1; -webkit-transition: all .2s; transition: all .2s; top: -.5em; left: 0; z-index: 3; line-height: 1; padding: 0 1px; }
@@ -34,6 +38,9 @@
 			+ * {  font-size: 16px; opacity: 1; top: .6em; }
 		}
 		&:focus { border-color: transparent; border-bottom: 1px solid $gray; box-shadow: none; }
+	}
+	&.select-arrow { 
+		&:after { content:$fa-var-angle-down; @include fa-icon(); position: absolute; right: 0; top: 10px; }
 	}
 }
 

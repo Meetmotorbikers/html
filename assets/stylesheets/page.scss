@@ -7,7 +7,7 @@
     form {
         .form-fit-helper { float: left; position: relative; margin-bottom: 0;
             label { position: absolute; height: 90px; vertical-align: middle; display: inline-block; left: 0; right: 0; line-height: 77px; padding-left: 30px; padding-right: 30px;
-				&:before { font-family: 'meetmotor-icons'; margin:0 10px 0 0; float: left; display: block; color: $gray; }
+				&:before { content: ''; font-family: 'meetmotor-icons'; margin:0 10px 0 0; float: left; display: block; color: $gray; }
     			&[for="where"]:before { content: $mm-iconmap; margin-left: 5px; }
                 &[for="time"]:before { content: $mm-iconclock; }
                 &[for="art"]:before { content: $mm-iconbike; margin-left: -15px; }
@@ -36,12 +36,15 @@
     footer { @include border-opacity($gray, 20%); }
 }
 
-.tours { overflow-y: scroll;
+.gmaps { min-height: 350px; }
+
+.tours { @include media-breakpoint-up(md) { overflow-y: scroll; }
     .tour-card { padding: 30px 45px; border-bottom: 1px solid $border; width: 100%;
         @include media-breakpoint-down(md) { padding: 25px 35px; }
         @include media-breakpoint-down(sm) { padding: 15px 25px; }
-        h3 { font-family: $league-gothic; text-transform: uppercase; font-size: 36px; line-height: 36px; margin-top: 0; margin-bottom: 9px; padding: 0; }
+        h3 { font-family: $league-gothic; text-transform: uppercase; font-size: 36px; line-height: 36px; margin-top: 0; margin-bottom: 9px; padding: 0; transition: all .111s ease-in; }
     }
+    a:hover { text-decoration: none; h3 { color: $primary; } }
 }
 
 ul.tour-infos { padding: 0; margin: 0; list-style: none; 
@@ -175,6 +178,10 @@ ul.profil-navigation { list-style: none; padding: 0; margin: 0 5px; border-top: 
     }
     strong { color: $secondary; }
     h3 { font-family: $league-gothic; font-size: 36px; color: $gray; text-transform: uppercase; margin-bottom: 10px; }
+}
+
+.create-tour {
+    h3 { font-family: $league-gothic; font-size: 36px; color: $gray; text-transform: uppercase; margin-bottom: 10px; } 
 }
 
 ul.add-friends { list-style: none; padding: 0; margin: 0; 

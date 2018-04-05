@@ -7,7 +7,7 @@
             <main>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-4 col-sm-12 col-xs-12" data-view-list>
                             <div class="sort-function row">
                                 <div class="col-lg-5">
                                     <div class="form-group clearfix">
@@ -49,19 +49,23 @@
                                     </a>
                                 </div>
                                 <div class="tour-card">
-                                    <h3>HAFENRUNDFAHRT</h3>
-                                    <ul class="tour-infos">
-                                        <li><i class="mm mm-iconcalendar"></i><span>in 2 Tagen</span></li>
-                                        <li><i class="mm mm-iconhead"></i><span>9/- unbegr. Teilnehmer</span></li>
-                                    </ul>
+                                    <a href="tour-detail.php" title="tour-detail">
+                                        <h3>HAFENRUNDFAHRT</h3>
+                                        <ul class="tour-infos">
+                                            <li><i class="mm mm-iconcalendar"></i><span>in 2 Tagen</span></li>
+                                            <li><i class="mm mm-iconhead"></i><span>9/- unbegr. Teilnehmer</span></li>
+                                        </ul>
+                                    </a>
                                 </div>
                                 <div class="tour-card">
-                                    <h3>OSTSEE-TOUR NACH SCHARBEUTZ</h3>
-                                    <ul class="tour-infos">
-                                        <li><i class="mm mm-iconcalendar"></i><span>15.04.18</span></li>
-                                        <li><i class="mm mm-iconclock"></i><span>14:30 Uhr</span></li>
-                                        <li><i class="mm mm-iconhead"></i><span>8/10 max. teiln.</span></li>
-                                    </ul>
+                                    <a href="tour-detail.php" title="tour-detail">
+                                        <h3>OSTSEE-TOUR NACH SCHARBEUTZ</h3>
+                                        <ul class="tour-infos">
+                                            <li><i class="mm mm-iconcalendar"></i><span>15.04.18</span></li>
+                                            <li><i class="mm mm-iconclock"></i><span>14:30 Uhr</span></li>
+                                            <li><i class="mm mm-iconhead"></i><span>8/10 max. teiln.</span></li>
+                                        </ul>
+                                    </a>
                                 </div>
                                 <div class="tour-card">
                                     <a href="tour-detail.php" title="tour-detail">
@@ -75,23 +79,27 @@
                                     </a>
                                 </div>
                                 <div class="tour-card">
-                                    <h3>HAFENRUNDFAHRT</h3>
-                                    <ul class="tour-infos">
-                                        <li><i class="mm mm-iconcalendar"></i><span>in 2 Tagen</span></li>
-                                        <li><i class="mm mm-iconhead"></i><span>9/- unbegr. Teilnehmer</span></li>
-                                    </ul>
+                                    <a href="tour-detail.php" title="tour-detail">
+                                        <h3>HAFENRUNDFAHRT</h3>
+                                        <ul class="tour-infos">
+                                            <li><i class="mm mm-iconcalendar"></i><span>in 2 Tagen</span></li>
+                                            <li><i class="mm mm-iconhead"></i><span>9/- unbegr. Teilnehmer</span></li>
+                                        </ul>
+                                    </a>
                                 </div>
                                 <div class="tour-card">
-                                    <h3>OSTSEE-TOUR NACH SCHARBEUTZ</h3>
-                                    <ul class="tour-infos">
-                                        <li><i class="mm mm-iconcalendar"></i><span>15.04.18</span></li>
-                                        <li><i class="mm mm-iconclock"></i><span>14:30 Uhr</span></li>
-                                        <li><i class="mm mm-iconhead"></i><span>8/10 max. teiln.</span></li>
-                                    </ul>
+                                    <a href="tour-detail.php" title="tour-detail">
+                                        <h3>OSTSEE-TOUR NACH SCHARBEUTZ</h3>
+                                        <ul class="tour-infos">
+                                            <li><i class="mm mm-iconcalendar"></i><span>15.04.18</span></li>
+                                            <li><i class="mm mm-iconclock"></i><span>14:30 Uhr</span></li>
+                                            <li><i class="mm mm-iconhead"></i><span>8/10 max. teiln.</span></li>
+                                        </ul>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-8 col-sm-12 col-xs-12 d-none d-sm-none d-md-block gmaps" style="background:url('assets/dist/images/googlemaps.jpg');">
+                        <div class="col-md-8 col-sm-12 col-xs-12 d-none d-sm-none d-md-block gmaps" style="background:url('assets/dist/images/googlemaps.jpg');" data-view-card>
                         </div>
                     </div>
                 </div>
@@ -100,6 +108,7 @@
             <?php include "includes/login-modal.php"; ?>
             <?php include "includes/register-modal.php"; ?>
             <?php include "includes/thanks-modal.php"; ?>
+            <?php include "includes/searchfilter.php"; ?>
         </div>
         <?php include "includes/scripts.php"; ?>
     </body>
