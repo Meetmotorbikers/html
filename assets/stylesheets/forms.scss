@@ -42,6 +42,13 @@
 	&.select-arrow { 
 		&:after { content:$fa-var-angle-down; @include fa-icon(); position: absolute; right: 0; top: 10px; }
 	}
+
+	&.steps { &::after { content: ''; display: block; position: absolute; right: 0; top: 10px; width: 20px; height: 20px; border: 1px solid $primary; border-radius: 100px; text-align: center; color: $primary; font-size: 11px; line-height: 19px; }      
+		$max: 10;
+		@for $i from 1 through $max / 2 {
+			&.step_#{$i} { &::after { content: '#{$i}'; } }
+		}
+	}
 }
 
 .input-group .has-float-label { -webkit-box-flex: 1; -webkit-flex-grow: 1; -ms-flex-positive: 1; flex-grow: 1; margin-bottom: 0; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center;

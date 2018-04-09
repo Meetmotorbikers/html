@@ -3,7 +3,7 @@
     <?php $title = "Overview"; include "includes/head.php"; ?>
     <body class="page">
         <div class="d-flex h-100 mx-auto flex-column">
-            <?php include "includes/header.php"; ?>
+            <?php include "includes/header-logged-back.php"; ?>
             <main class="create-tour">
                 <div class="container-fluid">
                     <div class="row">
@@ -13,10 +13,16 @@
                                     <div class="col-12 col-sm-12 col-md-12">
                                         <h3>Informationen</h3>
                                     </div>
-                                    <div class="col-12 col-sm-12 col-md-12">
+                                    <div class="col-12 col-sm-12 col-md-6">
                                         <div class="form-group has-float-label">
                                             <input type="text" class="form-control" id="name" required placeholder="Tour Name" autocomplete="off">
                                             <label for="name">Tour Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6">
+                                        <div class="form-group has-float-label">
+                                            <input class="form-control" id="timeonly" type="text" required placeholder="Uhrzeit" autocomplete="off">
+                                            <label for="timeonly">Uhrzeit</label>
                                         </div>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-6">
@@ -26,16 +32,21 @@
                                         </div>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-6">
-                                        <div class="form-group has-float-label">
-                                            <input class="form-control" id="timeonly" type="text" required placeholder="Uhrzeit" autocomplete="off">
-                                            <label for="timeonly">Uhrzeit</label>
+                                        <div class="form-group select-type">
+                                            <div class="select-wrap">
+                                                <select class="form-control" id="sichtabrkeit">
+                                                    <option selected disabled>Art der Tour</option>
+                                                    <option>Öffentliche Tour</option>
+                                                    <option>Nur für Freunde</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-12">
                                         <h3>Route</h3>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-12">
-                                        <div class="form-group has-float-label">
+                                        <div class="form-group has-float-label steps step_1">
                                             <input type="text" class="form-control" id="start" required placeholder="Start" autocomplete="off">
                                             <label for="start">Start</label>
                                         </div>
@@ -47,25 +58,15 @@
                                         <h3>Sonstige Einstellungen</h3>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-6">
-                                        <div class="form-group select-type">
-                                            <div class="select-wrap">
-                                                <select class="form-control" id="sichtabrkeit">
-                                                    <option selected disabled>Öffentliche Tour</option>
-                                                    <option>Nur für Freunde</option>
-                                                </select>
-                                            </div>
+                                        <div class="form-group has-float-label">
+                                            <input class="form-control" id="member" type="text" required placeholder="Maximale Teilnehmer (optional)" autocomplete="off">
+                                            <label for="member">Maximale Teilnehmer (optional)</label>
                                         </div>
                                     </div>
                                     <div class="col-12 col-sm-12 col-md-6">
                                         <div class="form-group has-float-label">
-                                            <input class="form-control" id="member" type="text" required placeholder="Maximale Teilnehmer (optional)" autocomplete="off">
-                                            <label for="member">Passwort</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-sm-12 col-md-12">
-                                        <div class="form-group has-float-label">
                                             <input type="text" class="form-control" id="description" required placeholder="Beschreibung" autocomplete="off">
-                                            <label for="description">Beschreibung</label>
+                                            <label for="description">Beschreibung (optional)</label>
                                         </div>
                                     </div>
                                     <div class="col-12 text-right">

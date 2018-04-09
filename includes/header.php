@@ -32,14 +32,14 @@
             </div>
             <div class="row btn-holder d-lg-none d-md-none">
                 <div class="col-6">
-                    <button class="btn btn-default" data-toggle="modal" data-target="#searchfilter">
+                    <a href="#" class="btn btn-default" data-toggle="modal" data-target="#searchfilter">
                         Suchradius & Filter
-                    </button>
+                    </a>
                 </div>
                 <div class="col-6">
-                    <button class="btn btn-default" data-view-switcher>
+                    <a href="#" class="btn btn-default" data-view-switcher>
                         Kartenansicht
-                    </button>
+                    </a>
                 </div>
             </div>
         </form>

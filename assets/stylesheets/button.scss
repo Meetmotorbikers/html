@@ -42,6 +42,7 @@ button.close {
 .btn-holder { margin-top: 10px; margin-bottom: 10px; }
 .back-button { color: $secondary; transition:all ease .2s;
     i { transition:all ease .2s; }
+    @include media-breakpoint-down(sm) { i { font-size: 30px; } }
     &:hover, &:focus { color: lighten($secondary, 5%); 
         i { margin-right: 5px; }
     }

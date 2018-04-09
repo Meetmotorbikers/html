@@ -9,33 +9,59 @@
                 </button>
             </div>
             <div class="modal-body">
-                <div class="row">
-                    <div class="col-sm-12 mb-3">
-                        <a href="#" class="btn btn-facebook full"><i class="fa fa-facebook"></i> Einloggen mit Facebook</a>
-                    </div>
-                    <div class="col-sm-12">
-                        <a href="#" class="btn btn-google full"><i class="fa fa-google"></i> Einloggen mit Google</a>
-                    </div>
-                    <div class="col-sm-12 text-center mt-4 mb-4">
-                        <span>oder</span>
-                    </div>
-                    <form class="col-sm-12">
-                        <div class="form-group has-float-label">
-                            <input type="text" class="form-control" id="email" required placeholder="Email Adresse" autocomplete="off">
-                            <label for="email">Email Adresse</label>
+                <div class="container">
+                    <form class="row">
+                        <div class="col-12 col-sm-12">
+                            <h3>Suchradius</h3>
                         </div>
-                        <div class="form-group has-float-label">
-                            <input class="form-control" id="password" type="password" required placeholder="Passwort" autocomplete="off">
-                            <label for="password">Passwort</label>
+                        <div class="col-12 col-sm-12 col-md-12">
+                            <div class="form-group select-type">
+                                <div class="select-wrap">
+                                    <select class="form-control" id="sichtabrkeit">
+                                        <option selected disabled>50km</option>
+                                        <option>75km</option>
+                                        <option>100km</option>
+                                        <option>125km</option>
+                                        <option>150km</option>
+                                        <option>175km</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12">
+                            <h3>Filter</h3>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12">
+                            <div class="form-group select-type has-float-label mt-2">
+                                <div class="select-wrap">
+                                    <select class="form-control" id="sichtabrkeit">
+                                        <option selected disabled>Öffentliche Tour</option>
+                                        <option>Nur für Freunde</option>
+                                    </select>
+                                </div>
+                                <label for="sichtabrkeit">Sortieren nach</label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12">
+                            <div class="form-group has-float-label mt-2">
+                                <input class="form-control" id="timeonly" type="text" required placeholder="Uhrzeit" autocomplete="off" value="Nachmittags">
+                                <label for="timeonly">Uhrzeit</label>
+                            </div>
                         </div>
                     </form>
-                    <div class="col-sm-12 text-center mt-2 mb-2">
-                        <a href="#" title="Jetzt Registrieren">Passwort vergessen?</a>
-                    </div>
                 </div>
             </div>
             <div class="modal-footer">
-                <p>Hast du noch keinen Account? <a href="#" title="Jetzt Registrieren">Jetzt Registrieren</a></p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12">
+                            <a href="#" class="btn btn-primary btn-block" title="Filter übernehmen">Filter übernehmen</a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 mt-3">
+                            <a href="#" class="btn btn-default btn-block" title="Abbrechen">Abbrechen</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
