@@ -64,6 +64,9 @@
 		if(window.location.href.indexOf("thanks") > -1) {
 			$('#thanks').modal('show');
 		}
+		if(window.location.href.indexOf("#create-tour") > -1) {
+			$('#create-tour').modal('show');
+		}
 	}
 
 	function dataviewSwitcher() {

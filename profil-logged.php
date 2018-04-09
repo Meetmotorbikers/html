@@ -3,7 +3,12 @@
     <?php $title = "Profil Overview"; include "includes/head.php"; ?>
     <body class="page">
         <div class="d-flex h-100 mx-auto flex-column">
-            <?php include "includes/header-logged-back.php"; ?>
+			<div class="d-none d-sm-none d-md-block d-lg-block">
+				<?php include "includes/header-logged-back.php"; ?>
+			</div>
+			<div class="d-block d-sm-block d-md-none d-lg-none">
+				<?php include "includes/header-logged-mobile.php"; ?>
+			</div>
             <main>
                 <div class="container-fluid">
                     <div class="row">

@@ -38,7 +38,11 @@
 
 .gmaps { min-height: 350px; }
 
-.tours { @include media-breakpoint-up(md) { overflow-y: scroll; }
+.profil-content, .tours, .create-tour-content { 
+    @media (max-height: 730px) and (max-width: 991px) { overflow-y: scroll; }
+}
+
+.tours { @include media-breakpoint-up(md) { overflow-y: scroll; } 
     .tour-card { padding: 30px 45px; border-bottom: 1px solid $border; width: 100%;
         @include media-breakpoint-down(md) { padding: 25px 35px; }
         @include media-breakpoint-down(sm) { padding: 15px 25px; }
@@ -165,8 +169,6 @@ ul.profil-navigation { list-style: none; padding: 0; margin: 0 5px; border-top: 
         li { width: 100%; margin-bottom: 7px; &:last-child { margin-bottom: 0; } }
     }
 }
-
-.profil-content { overflow-y: scroll; }
 
 .friend {
     .user-name { display: block; color: $secondary; font-size: 22px; font-family: $league-gothic; text-transform: uppercase; margin-top: 15px; }

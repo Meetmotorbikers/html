@@ -69,8 +69,8 @@
                                             <label for="description">Beschreibung (optional)</label>
                                         </div>
                                     </div>
-                                    <div class="col-12 text-right">
-                                        <input class="btn btn-primary" type="submit" value="Änderungen speichern">
+                                    <div class="col-12 text-right mt-3 mb-3">
+                                        <input class="btn btn-primary d-block d-sm-block d-md-inline d-lg-inline full-width" type="submit" value="Tour erstellen" data-toggle="modal" data-target="#create-tour">
                                     </div>
                                 </form>
                             </div>
@@ -84,6 +84,7 @@
             <?php include "includes/login-modal.php"; ?>
             <?php include "includes/register-modal.php"; ?>
             <?php include "includes/thanks-modal.php"; ?>
+            <?php include "includes/create-tour-modal.php"; ?>
         </div>
         <?php include "includes/scripts.php"; ?>
     </body>
