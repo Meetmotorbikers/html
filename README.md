@@ -29,9 +29,10 @@
 - [x] Profil (loggt) -> Profil gesperrt
 - [x] Profil (loggt) -> Anstehende Touren
 - [x] Tour erstellen
+- [x] Mobile Überarbeitung
 
 **TODOs**
-- [ ] Mobile Überarbeitung
+....
 
 **DEMO**
 ```
