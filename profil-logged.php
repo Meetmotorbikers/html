@@ -3,34 +3,29 @@
     <?php $title = "Profil Overview"; include "includes/head.php"; ?>
     <body class="page">
         <div class="d-flex h-100 mx-auto flex-column">
-			<div class="d-none d-sm-none d-md-block d-lg-block">
-				<?php include "includes/header-logged-back.php"; ?>
-			</div>
-			<div class="d-block d-sm-block d-md-none d-lg-none">
-				<?php include "includes/header-logged-mobile.php"; ?>
-			</div>
+			<?php $loggedBack = "true"; $loggedBackMobile = "true"; include "includes/header.php"; ?>
             <main>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 dark-bg profil text-center">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 dark-bg profil profil-set text-center">
                         	<div class="pt-5 pb-4">
                         		<span class="image-round">
 		                            <img src="assets/dist/images/alexander-user-big.png" alt="Alexander User" class="img-fluid" width="100" height="100" />
 		                        </span>
 	                        </div>
 	                        <h1>Alexander Schmidt</h1>
-	                        <h2 class="h5">KAWASAKI Z800</h2>
-	                        <ul class="profil-navigation pt-3 pb-3 mt-5 mb-4 text-left">
+	                        <h2 class="h5 pb-5">KAWASAKI Z800</h2>
+	                        <ul class="profil-navigation pt-3 pb-3 mb-4 text-left d-none d-sm-block d-md-block d-lg-block">
 	                        	<li class="active"><a href="profil-logged.php" title="Profil"><i class="mm-iconuser"></i> Profil</a></li>
 	                        	<li><a href="profil-notifications.php" title="Benachrichtigungen"><i class="mm-iconnotification"></i> Benachrichtigungen <span class="mm-notification">1</span></a></li>
 	                        	<li><a href="profil-settings.php" title="Profil Einstellungen"><i class="mm-iconcok"></i> Profil Einstellungen</a></li>
 	                        	<li><a href="overview.php" title="Ausloggen"><i class="mm-iconlogout"></i> Ausloggen</a></li>
 	                        </ul>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-8 col-lg-9 profil-content">
+                        <div class="col-xs-12 col-sm-6 col-md-8 col-lg-9 profil-content get-height">
                         	<div class="content-spacer">
-								<nav>
-									<div class="nav nav-tabs-mm" id="nav-tab" role="tablist">
+								<nav class="nav-wrapper">
+									<div class="nav nav-tabs d-block" id="nav-tab" role="tablist">
 										<a class="nav-item active" id="nav-next-tours-tab" data-toggle="tab" href="#nav-next-tours" role="tab" aria-controls="nav-next-tours" aria-selected="true">
 											Anstehende Touren (2)
 										</a>
@@ -73,8 +68,8 @@
 										</div>
 									</div>
 									<div class="tab-pane fade" id="nav-friends" role="tabpanel" aria-labelledby="nav-friends-tab">
-										<div class="row">
-											<div class="col-xs-12 col-sm-12 col-md-4 col-lg-2 text-center" data-mh="user">
+										<div class="row mb-5">
+											<div class="col-6 col-sm-6 col-md-4 col-lg-2 text-center" data-mh="user">
 												<div class="friend">
 													<div class="image-round">
 														<img src="assets/dist/images/user-1-big.png" alt="User" class="img-fluid" width="130" height="130" />
@@ -82,7 +77,7 @@
 													<span class="user-name">Michael Wick</span>
 												</div>
 											</div>
-											<div class="col-xs-12 col-sm-12 col-md-4 col-lg-2 text-center" data-mh="user">
+											<div class="col-6 col-sm-6 col-md-4 col-lg-2 text-center" data-mh="user">
 												<div class="friend">
 													<div class="image-round">
 														<img src="assets/dist/images/user-2-big.png" alt="User" class="img-fluid" width="130" height="130" />
@@ -90,7 +85,7 @@
 													<span class="user-name">Alexander Brand</span>
 												</div>
 											</div>
-											<div class="col-xs-12 col-sm-12 col-md-4 col-lg-2 text-center" data-mh="user">
+											<div class="col-6 col-sm-6 col-md-4 col-lg-2 text-center" data-mh="user">
 												<div class="friend">
 													<div class="image-round">
 														<img src="assets/dist/images/user-3-big.png" alt="User" class="img-fluid" width="130" height="130" />
@@ -98,7 +93,7 @@
 													<span class="user-name">Susann Meier</span>
 												</div>
 											</div>
-											<div class="col-xs-12 col-sm-12 col-md-4 col-lg-2 text-center" data-mh="user">
+											<div class="col-6 col-sm-6 col-md-4 col-lg-2 text-center" data-mh="user">
 												<div class="friend">
 													<div class="image-round">
 														<img src="assets/dist/images/user-4-big.png" alt="User" class="img-fluid" width="130" height="130" />
@@ -156,9 +151,9 @@
                 </div>
             </main>
             <?php $class = "black"; include "includes/footer.php"; ?>
-            <?php include "includes/login-modal.php"; ?>
-            <?php include "includes/register-modal.php"; ?>
-            <?php include "includes/thanks-modal.php"; ?>
+            <?php include "includes/modals/login-modal.php"; ?>
+            <?php include "includes/modals/register-modal.php"; ?>
+            <?php include "includes/modals/thanks-modal.php"; ?>
         </div>
         <?php include "includes/scripts.php"; ?>
     </body>

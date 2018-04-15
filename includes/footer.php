@@ -7,9 +7,9 @@
                 </a>
                 <span>© MeetMotorbikers</span>
                 <ul class="footer-nav">
-                    <li><a href="" title="">Nutzungsbedingungen</a></li>
-                    <li><a href="" title="">Datenschutz</a></li>
-                    <li><a href="" title="">Impressum</a></li>
+                    <li><a href="#" title="Nutzungsbedingungen">Nutzungsbedingungen</a></li>
+                    <li><a href="#" title="">Datenschutz</a></li>
+                    <li><a href="#" title="Impressum" data-toggle="modal" data-target="#impressum">Impressum</a></li>
                 </ul>
             </div>
             <div class="col-4 col-xs-4 col-sm-4 col-md-4">
@@ -22,3 +22,4 @@
         </div>
     </div>
 </footer>
+<?php include "includes/modals/impressum-modal.php"; ?>

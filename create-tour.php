@@ -3,12 +3,12 @@
     <?php $title = "Overview"; include "includes/head.php"; ?>
     <body class="page">
         <div class="d-flex h-100 mx-auto flex-column">
-            <?php include "includes/header-logged-back.php"; ?>
+            <?php $loggedBack = "true"; include "includes/header.php"; ?>
             <main class="create-tour">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-6 col-sm-12 col-xs-12 create-tour-content">
-                            <div class="content-spacer">
+                            <div class="content-spacer get-height">
                                 <form class="row">
                                     <div class="col-12 col-sm-12 col-md-12">
                                         <h3>Informationen</h3>
@@ -81,10 +81,10 @@
                 </div>
             </main>
             <?php $class = "black"; include "includes/footer.php"; ?>
-            <?php include "includes/login-modal.php"; ?>
-            <?php include "includes/register-modal.php"; ?>
-            <?php include "includes/thanks-modal.php"; ?>
-            <?php include "includes/create-tour-modal.php"; ?>
+            <?php include "includes/modals/login-modal.php"; ?>
+            <?php include "includes/modals/register-modal.php"; ?>
+            <?php include "includes/modals/thanks-modal.php"; ?>
+            <?php include "includes/modals/create-tour-modal.php"; ?>
         </div>
         <?php include "includes/scripts.php"; ?>
     </body>

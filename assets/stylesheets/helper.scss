@@ -8,6 +8,8 @@ button.close { &:hover, &:focus { opacity: 1; } opacity: 1; }
 .blured { img { filter: blur(10px); } }
 .blocked { position: relative; &:after { content:'\e90c'; font-family: 'meetmotor-icons' !important; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; display: block; color:#fff; font-size: 50px; position: absolute; right: 0; top: 50%; left: 50%; transform:translate(-50%,-50%); } }
 
+.h-content { height: calc(100% - 42px) !important; }
+
 .content-spacer { @extend .p-5;
 	@include media-breakpoint-down(lg) { padding: 1.5rem!important; } 
 	@include media-breakpoint-down(md) { padding: 1rem!important; } 

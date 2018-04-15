@@ -3,7 +3,7 @@
     <?php $title = "Startseite"; include "includes/head.php"; ?>
     <body class="start">
         <div class="d-flex h-100 mx-auto flex-column">
-            <?php include "includes/home-header.php"; ?>
+            <?php $headerHome = "true"; include "includes/header.php"; ?>
             <main>
                 <div class="container">
                     <div class="row">
@@ -41,9 +41,9 @@
                 </div>
             </main>
             <?php $class = "white"; include "includes/footer.php"; ?>
-            <?php include "includes/login-modal.php"; ?>
-            <?php include "includes/register-modal.php"; ?>
-            <?php include "includes/thanks-modal.php"; ?>
+            <?php include "includes/modals/login-modal.php"; ?>
+            <?php include "includes/modals/register-modal.php"; ?>
+            <?php include "includes/modals/thanks-modal.php"; ?>
         </div>
         <?php include "includes/scripts.php"; ?>
     </body>

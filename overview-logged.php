@@ -3,7 +3,7 @@
     <?php $title = "Overview Logged"; include "includes/head.php"; ?>
     <body class="page">
         <div class="d-flex h-100 mx-auto flex-column">
-            <?php include "includes/header-logged.php"; ?>
+            <?php $logged = "true"; include "includes/header.php"; ?>
             <main>
                 <div class="container-fluid">
                     <div class="row">
@@ -87,7 +87,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-8 col-sm-12 col-xs-12 d-none d-sm-none d-md-block gmaps" style="background:url('assets/dist/images/googlemaps.jpg');">
+                        <div class="col-md-8 col-sm-12 col-xs-12 d-none d-sm-none d-md-block gmaps get-height" style="background:url('assets/dist/images/googlemaps.jpg');">
                         </div>
                     </div>
                 </div>

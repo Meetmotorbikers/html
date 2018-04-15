@@ -3,7 +3,7 @@
     <?php $title = "Overview"; include "includes/head.php"; ?>
     <body class="page">
         <div class="d-flex h-100 mx-auto flex-column">
-            <?php include "includes/header.php"; ?>
+            <?php $header = "true"; include "includes/header.php"; ?>
             <main>
                 <div class="container-fluid">
                     <div class="row">
@@ -99,16 +99,16 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-8 col-sm-12 col-xs-12 d-none d-sm-none d-md-block gmaps" style="background:url('assets/dist/images/googlemaps.jpg');" data-view-card>
+                        <div class="col-md-8 col-sm-12 col-xs-12 d-none d-sm-none d-md-block gmaps get-height" style="background:url('assets/dist/images/googlemaps.jpg');" data-view-card>
                         </div>
                     </div>
                 </div>
             </main>
             <?php $class = "black"; include "includes/footer.php"; ?>
-            <?php include "includes/login-modal.php"; ?>
-            <?php include "includes/register-modal.php"; ?>
-            <?php include "includes/thanks-modal.php"; ?>
-            <?php include "includes/searchfilter.php"; ?>
+            <?php include "includes/modals/login-modal.php"; ?>
+            <?php include "includes/modals/register-modal.php"; ?>
+            <?php include "includes/modals/thanks-modal.php"; ?>
+            <?php include "includes/modals/searchfilter-modal.php"; ?>
         </div>
         <?php include "includes/scripts.php"; ?>
     </body>

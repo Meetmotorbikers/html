@@ -3,7 +3,7 @@
     <?php $title = "Tour Detail Logged"; include "includes/head.php"; ?>
     <body class="page">
         <div class="d-flex h-100 mx-auto flex-column">
-            <?php include "includes/header-logged-back.php"; ?>
+            <?php $loggedBack = "true"; include "includes/header.php"; ?>
             <main class="tour-detail content-spacer">
                 <div class="container-fluid">
                     <div class="row">
@@ -91,9 +91,9 @@
                 </div>
             </main>
             <?php $class = "black"; include "includes/footer.php"; ?>
-            <?php include "includes/login-modal.php"; ?>
-            <?php include "includes/register-modal.php"; ?>
-            <?php include "includes/thanks-modal.php"; ?>
+            <?php include "includes/modals/login-modal.php"; ?>
+            <?php include "includes/modals/register-modal.php"; ?>
+            <?php include "includes/modals/thanks-modal.php"; ?>
         </div>
         <?php include "includes/scripts.php"; ?>
     </body>

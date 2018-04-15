@@ -41,6 +41,7 @@
 .profil-content, .tours, .create-tour-content { 
     @media (max-height: 730px) and (max-width: 991px) { overflow-y: scroll; }
 }
+.create-tour-content { @media (max-height: 700px) and (min-width: 767px) { overflow-y: scroll; } }
 
 .tours { @include media-breakpoint-up(md) { overflow-y: scroll; } 
     .tour-card { padding: 30px 45px; border-bottom: 1px solid $border; width: 100%;
@@ -151,15 +152,19 @@ ul.profil-navigation { list-style: none; padding: 0; margin: 0 5px; border-top: 
 
 .mm-notification { background: $primary; font-size: 10px; text-align: center; padding: 1px 5px; color: #fff; border-radius: 100px; }
 
-.nav-tabs-mm { margin-bottom: 30px; 
-    &:after { content: ''; width: 100%; display: block; height: 1px; background: $border; }
-    a { color: $gray; font-weight: 700; padding: 0; margin-right: 25px; transition: all .111s ease-in;
-        &:hover, &:focus { text-decoration: none; color: $secondary; }
-         &:after { margin-top: 15px; content: ''; width: 0%; display: block; height: 2px; background: transparent; transition: all .111s ease-in; }
-        &.active { color: $secondary; 
-            &:after { margin-top: 15px; content: ''; width: 100%; display: block; height: 2px; background: $primary; }
+.nav-wrapper { overflow: auto; white-space: nowrap;
+    @include media-breakpoint-down(sm) { margin: 30px -23px 0 -23px; padding: 0 23px; }
+    &::-webkit-scrollbar { width: 0 !important; }
+    .nav-tabs { margin-bottom: 30px; border: none; 
+        &:after { content: ''; width: 100%; display: block; height: 1px; background: $border; position: absolute; left: 0; }
+        a { color: $gray; font-weight: 700; padding: 0; margin-right: 25px; transition: all .111s ease-in; display:inline-block;
+            &:hover { text-decoration: none; color: $secondary; }
+            &:after { margin-top: 15px; content: ''; width: 0%; display: block; height: 2px; background: transparent; transition: all .111s ease-in; }
+            &.active { color: $secondary; 
+                &:after { margin-top: 15px; content: ''; width: 100%; display: block; height: 2px; background: $primary; }
+            }
+            &:last-child { margin-right: 0; }
         }
-        &:last-child { margin-right: 0; }
     }
 }
 
@@ -206,4 +211,3 @@ ul.add-friends { list-style: none; padding: 0; margin: 0;
         }
     }
 }
-
