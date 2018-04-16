@@ -108,22 +108,19 @@ ul.search-drop { margin: 0; list-style:none; position: absolute; z-index: 100; t
     }
 }
 
-.steps-timeline { @include make-row();
-    .step { @include make-col-ready(); @include make-col(4);
-        &:before { content: ''; text-align: center; display: block; width: 28px; height: 28px; border: 1px solid $primary; border-radius: 100px; color: $primary; font-family: $league-gothic; font-size: 15px; background: #fff; position: relative; z-index: 1000; }
-        &:after { content: ''; position: absolute; width: 89%; top: 11px; left: 50px; border-width: 0 0 6px 0; border-style: dotted; border-color: $gray; border-image-source: url(../images/dots.svg); border-image-slice: 25% 20%; border-image-repeat: round; }
-        @include media-breakpoint-down(sm) {
-            @include make-col(12);
-        }
+.steps-timeline {
+    .step { padding: 0 0 35px 40px; position: relative;
+        &:before { content: ''; text-align: center; display: block; width: 28px; height: 28px; line-height: 28px; border: 1px solid $primary; border-radius: 100px; color: $primary; font-family: $league-gothic; font-size: 15px; background: #fff; position: absolute; left: 0; z-index: 1000; }
+        &:after { content: ''; position: absolute; width: 5px; top: 11px; left: 12px; height: 100%; border-left: dotted 5px $gray; }
         &:nth-child(1) { &:before { content: '1'; } }
         &:nth-child(2) { &:before { content: '2'; } }
-        &:nth-child(3) { &:before { content: '3'; } &:after { display: none; @include media-breakpoint-down(sm) { display: block; } } }
+        &:nth-child(3) { &:before { content: '3'; } &:after { display: none; } }
         h4 { font-family: $league-gothic; font-size: 22px; text-transform: uppercase; margin-bottom: 0px; letter-spacing: 0px; }
     }
 }
 
 ul.user-list { list-style: none; padding: 0;  
-    li { display: inline-block; margin-right: 10px; 
+    li { display: inline-block; margin: 0 10px 10px 0; 
         &:last-child { margin-right: 0; }
     }
 }
@@ -163,7 +160,9 @@ ul.profil-navigation { list-style: none; padding: 0; margin: 0 5px; border-top: 
             &.active { color: $secondary; 
                 &:after { margin-top: 15px; content: ''; width: 100%; display: block; height: 2px; background: $primary; }
             }
-            &:last-child { margin-right: 0; }
+            @include media-breakpoint-up(sm) { 
+                &:last-child { margin-right: 0; }
+            }
         }
     }
 }

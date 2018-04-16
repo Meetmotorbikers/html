@@ -10,8 +10,6 @@
 		var theWindowHeight = $(this).height();
 		var contentHeight = $('.get-height').height();
 
-		console.log(contentHeight < 790);
-
 		if(theWindowWidth > 767 && contentHeight < 790 ) {
 			$(window).resize(function() {
 			    $('.gmaps, .profil-set, .profil-content, .create-tour-content').height($(window).height() - headandfooter);

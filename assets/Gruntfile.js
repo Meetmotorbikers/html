@@ -1,4 +1,3 @@
-
 /*!
  * Meetmotor
  * Copyright 2017 Tim Töws
@@ -8,146 +7,78 @@
 module.exports = function (grunt) {
 	'use strict';
 
-	// Force use of Unix newlines
 	grunt.util.linefeed = '\n';
 
-	// Project configuration.
 	grunt.initConfig({
-
 		sass: {
-			dist: {
-				options:{
-		          style:'compressed',
-		          sourcemap: 'auto'
-		        },
-		        files: {
-					'dist/stylesheets/website.min.css' : 'stylesheets/website.scss'
-				}
+			dist : {
+				options: {
+					sourceMap: true
+				},
+				src: 'stylesheets/website.scss',
+				dest: 'dist/stylesheets/website.css'
 			}
 		},
-
 		postcss: {
-            options: {
-                processors: [
-                    require('autoprefixer'),
-                    require('cssnano')
-                ]
-            },
-            dist: {
-                src: 'dist/stylesheets/website.min.css'
-            }
-        },
-
+			dist : {
+				options: {
+					map: true,
+					processors: [
+						require('autoprefixer')({ browsers: 'last 2 version, IE 9' }),
+						require('cssnano')({ discardComments: { removeAll: true } })
+					]
+				},
+				src: 'dist/stylesheets/website.css',
+				dest: 'dist/stylesheets/website.min.css'
+			}
+		},
 		copy: {
-            fonts: {
-                files: [
-                    { expand: true, cwd: 'fonts', src: ['**/*.{ttf,eot,woff,woff2,svg}'], dest: 'dist/fonts/vendors/' }
-                ]
-            },
-			images: {
+			fonts : {
 				files: [
-					{ expand: true, cwd: 'vendors', src: ['**/*.{png,jpg,jpeg,svg,gif,ico}'], dest: 'dist/images/vendors/' },
-					{ expand: true, cwd: 'images', src: ['**/*.{png,jpg,jpeg,svg,gif,ico}'], dest: 'dist/images/' }
+					{ expand: true, src: ['fonts/**/*.{ttf,eot,woff,woff2,svg}', '!node_modules/**'], dest: 'dist' },
+					{ expand: true, src: ['vendors/**/*.{ttf,eot,woff,woff2,svg}', '!node_modules/**'], dest: 'dist/fonts' }
 				]
 			},
-			js: {
+			images : {
 				files: [
-					{ expand: true, cwd: 'vendors', src: ['**/*.js', '!**/Gruntfile.js'], dest: 'dist/javascripts/vendors/' },
-					{ expand: true, cwd: 'javascripts', src: ['**'], dest: 'dist/javascripts/' }
+					{ expand: true, src: ['images/**/*.{png,jpg,jpeg,gif,tiff,bmp,svg}', '!node_modules/**'], dest: 'dist' },
+					{ expand: true, src: ['vendors/**/*.{png,jpg,jpeg,gif,tiff,bmp,svg}', '!node_modules/**'], dest: 'dist/images' }
+				]
+			},
+			js : {
+				files: [
+					{ expand: true, src: ['javascripts/**/*.js', '!node_modules/**'], dest: 'dist' },
+					{ expand: true, src: ['vendors/**/*.js', '!node_modules/**'], dest: 'dist/javascripts' }
 				]
 			}
 		},
 
 		clean: {
-			options: {
-				force : true
-			},
-			less: {
-				src: ['dist/stylesheets']
-			},
-			js: {
-				src: ['dist/javascripts']
-			},
-			images: {
-				src: ['dist/images']
-			},
-			fonts: {
-				src: ['dist/fonts']
-			}
+			dist: ['dist']
 		},
 
-
 		watch: {
-			sass: {
-				files: ['stylesheets/**/*.scss', 'javascripts/**/*.js', 'images/**/*.{png,jpg,jpeg,svg,gif,ico}'],
-				tasks: 'compile'
+			sass : {
+				files : ['**/*.scss', '!dist/**'],
+				tasks: ['sass', 'postcss']
 			},
-			postcss: {
-				files : ['dist/stylesheets/website.min.css'],
-				tasks: ['postcss'],
-				options : {
-					livereload: {
-						host: 'localhost',
-						port: 1337
-					}
-				}
+			fonts : {
+				files : ['**/*.{eot,svg,ttf,woff,woff2}', '!dist/**'],
+				tasks: ['copy:fonts']
 			},
-			copy: {
-				files : ['javascripts/**/*.js', 'images/**/*.{png,jpg,jpeg,svg,gif,ico}', 'fonts/**/*.{ttf,eot,woff,woff2,svg}'],
-				tasks: ['copy'],
-				options: {
-					event: ['added', 'changed'],
-					livereload: {
-						host: 'localhost',
-						port: 1337
-					}
-				}
+			images : {
+				files : ['**/*.{png,jpg,jpeg,gif,tiff,bmp,svg}', '!dist/**'],
+				tasks: ['copy:images']
 			},
-			removedJS : {
-				files : ['javascripts/**/*.js'],
-				tasks: ['clean:js', 'copy:js'],
-				options: {
-					event: ['deleted'],
-					livereload: {
-						host: 'localhost',
-						port: 1337
-					}
-				}
-			},
-			removedImages : {
-				files : ['images/**/*.{png,jpg,jpeg,svg,gif,ico}'],
-				tasks: ['clean:images', 'copy:images'],
-				options: {
-					event: ['deleted'],
-					livereload: {
-						host: 'localhost',
-						port: 1337
-					}
-				}
-			},
-			removedFonts : {
-				files : ['fonts/**/*.{ttf,eot,woff,woff2,svg}'],
-				tasks: ['clean:fonts', 'copy:fonts'],
-				options: {
-					event: ['deleted'],
-					livereload: {
-						host: 'localhost',
-						port: 1337
-					}
-				}
+			js : {
+				files : ['**/*.js', '!dist/**', '!**/Gruntfile.js'],
+				tasks: ['copy:js']
 			}
-
-
 		}
-
 	});
 
-	// compile tasks
 	grunt.registerTask('compile', ['clean', 'sass', 'postcss', 'copy']);
-
-	// watch tasks
 	grunt.registerTask('watch', ['watch']);
 
-	// These plugins provide necessary tasks.
 	require('load-grunt-tasks')(grunt, { scope: 'devDependencies' });
 };

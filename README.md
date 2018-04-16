@@ -88,13 +88,15 @@ change css or js?
 **package.json**
 - devDependencies:
 - autoprefixer: ^8.0.0
-- grunt: ~0.4.5
-- grunt-contrib-clean: ^1.1.0
-- grunt-contrib-compress: ~0.13.0
-- grunt-contrib-copy: ~1.0.0
-- grunt-contrib-sass: ~1.0.0
-- grunt-contrib-watch: ~0.6.1
-- grunt-cssnano: ^2.1.0
-- grunt-newer: ~1.1.2
-- grunt-postcss: ^0.9.0
+- cssnano: ^4.0.0-rc.2,
+- grunt: ~0.4.5,
+- grunt-contrib-clean: ^1.1.0,
+- grunt-contrib-copy: ^1.0.0,
+- grunt-contrib-watch: ~0.6.1,
+- grunt-cssnano: ^2.1.0,
+- grunt-postcss: ^0.9.0,
+- grunt-sass: ^2.1.0,
 - load-grunt-tasks: ~3.2.0
+
+- dependencies:
+- npm: ^5.8.0

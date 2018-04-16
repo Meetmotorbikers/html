@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'league-gothic';
-  src:  url('../fonts/vendors/league-gothic/leaguegothic-regular-webfont.eot?9tgxtb');
-  src:  url('../fonts/vendors/league-gothic/leaguegothic-regular-webfont.eot?9tgxtb#iefix') format('embedded-opentype'),
-    url('../fonts/vendors/league-gothic/leaguegothic-regular-webfont.ttf?9tgxtb') format('truetype'),
-    url('../fonts/vendors/league-gothic/leaguegothic-regular-webfont.woff?9tgxtb') format('woff'),
-    url('../fonts/vendors/league-gothic/leaguegothic-regular-webfont.svg?9tgxtb#meetmotor-icons') format('svg');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'league-gothic';
+	src:  url('../fonts/league-gothic/leaguegothic-regular-webfont.eot?9tgxtb');
+	src:  url('../fonts/league-gothic/leaguegothic-regular-webfont.eot?9tgxtb#iefix') format('embedded-opentype'),
+	url('../fonts/league-gothic/leaguegothic-regular-webfont.ttf?9tgxtb') format('truetype'),
+	url('../fonts/league-gothic/leaguegothic-regular-webfont.woff?9tgxtb') format('woff'),
+	url('../fonts/league-gothic/leaguegothic-regular-webfont.svg?9tgxtb#meetmotor-icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 $league-gothic:					   'league-gothic', sans-serif;

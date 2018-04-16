@@ -19,15 +19,15 @@
                             <div class="steps-timeline">
                                 <div class="step">
                                     <h4>Treffpunkt</h4>
-                                    <address>Rathausmarkt 1<br />20095 Hamburg</address>
+                                    <address>Rathausmarkt 1, 20095 Hamburg</address>
                                 </div>
                                 <div class="step">
                                     <h4>Zwischenstop</h4>
-                                    <address>Heinrich-Osterath-Straße<br />21037 Hamburg</address>
+                                    <address>Heinrich-Osterath-Straße, 21037 Hamburg</address>
                                 </div>
                                 <div class="step">
                                     <h4>Ziel</h4>
-                                    <address>Schifferamt 6<br />21423 Winsen</address>
+                                    <address>Schifferamt 6, 21423 Winsen</address>
                                 </div>
                             </div>
                             <hr class="mt-4 mb-4" />
